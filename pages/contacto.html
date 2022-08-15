@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brujo Excursiones</title>
+    <meta name="description" content="Sitio web de Turismo San Francisco del Monte de Oro">
+
+    <!-- Preload -->
+    <link rel="preload" href="../css/normalize.css" as="style">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos -->
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">  
+        <div class="encabezado">
+          <div class="logo__encabezado">
+            <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo"></a>
+          </div>  
+          <div class="titulo__principal">
+            <p class="titulo-brujo">Brujo Excursiones</p>
+          </div>
+          <div class="titulo__secundario">
+            <p class="titulo-detalle">Agencia de Tours Ecologicos - San Francisco del Monte de Oro - San Luis</p>
+          </div>
+        </div>
+
+    </header>  
+    <!-- Barra de Navegación -->
+    <nav class="nav-bg">
+      
+        <ul class="navegacion">
+          <li class="list-item"><a href="../index.html">Inicio</a></li>
+          <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
+          <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
+          <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
+          <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Titulo Página -->
+    <div class="titulo__pagina">
+        <h1>Brujo Excursiones - Formulario de Contacto</h1>
+    </div>
+    <!-- Formulario -->
+    <main class="contenedor">
+      <h2 class="texto__titulo">Contactános</h2>
+      <div class="contacto-bg imagen"></div>
+      <form class="formulario">
+          <div class="campo">
+              <label class="campo__label" for="nombre">Nombre</label>
+              <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
+          </div>
+          <div class="campo">
+              <label class="campo__label" for="excursiones">Excursión</label>
+              <select class="campo__field" name="excursiones" id="excursiones">
+                  <option value="escondido">Trekking Salto Escondido</option>
+                  <option value="montaña">Senderismo de Montaña</option>
+                  <option value="condor">Trekking Paso del Condor</option>
+                  <option value="alpinismo">Alpinismo</option>
+                  <option value="campamento">Campamentos</option>
+                </select>
+          </div>
+          <div class="campo">
+              <label class="campo__label" for="email">Mail</label>
+              <input class="campo__field" type="email" placeholder="Tu Email" id="email">
+          </div>
+          <div class="campo">
+              <label class="campo__label" for="mensaje">Mensaje</label>
+              <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+          </div>
+          <div class="campo">
+              <label class="campo__checkbox" for="infosalidas">
+                  <input type="checkbox" name="infosalidas" id="infosalidas">
+                  Deseo recibir información sobre salidas grupales
+              </label>
+          </div>
+          <div class="botones__contacto">
+              <input type="reset" value="Limpiar Datos" class="boton boton--primario">
+              <input type="submit" value="Enviar" class="boton boton--primario">
+          </div>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="pie">
+          <div class="pie__redes">
+            <p>Siguenos en Redes</p>
+            <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="../img/facebook.svg" alt="icono Facebook"></a>
+            <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="../img/instagram.svg" alt="icono Instagram"></a>
+            <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="../img/whatsapp.svg" alt="icono WhatsApp"></a>
+          </div>
+          <div class="pie__derechos">
+              <p>Brujo Excursiones - Todos los derechos reservados - 2022</p>
+          </div>
+          <div class="pie__domicilio">
+              <p>Calle XXXX Altura 123</p>
+              <p>Te: 1234-567890</p>
+              <p>mail@mail.com</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

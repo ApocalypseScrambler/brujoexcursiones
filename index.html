@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brujo Excursiones</title>
+    <meta name="description" content="Sitio web de Turismo San Francisco del Monte de Oro">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">  
+        <div class="encabezado">
+          <div class="logo__encabezado">
+            <a title="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="Logo"></a>
+          </div>  
+          <div class="titulo__principal">
+            <p class="titulo-brujo">Brujo Excursiones</p>
+          </div>
+          <div class="titulo__secundario">
+            <p class="titulo-detalle">Agencia de Tours Ecologicos - San Francisco del Monte de Oro - San Luis</p>
+          </div>
+        </div>
+
+    </header>  
+    
+    <!-- Barra de Navegación -->
+    <nav class="nav-bg">
+      <ul class="navegacion">
+        <li class="list-item"><a href="./index.html">Inicio</a></li>
+        <li class="list-item"><a href="./pages/excursiones.html">Excursiones</a></li>
+        <li class="list-item"><a href="./pages/salidas.html">Salidas Grupales</a></li>
+        <li class="list-item"><a href="./pages/galeria.html">Imágenes y Video</a></li>
+        <li class="list-item"><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Titulo de Página -->
+    <div class="titulo__pagina">
+      <h1>Brujo Excursiones - Actividades</h1>
+    </div>
+    
+    <!-- Slider -->
+    <div class="slider" id="slider" style="--img-prev:url(./img/bosques-slider.jpg);"> 
+        <div class="slider__content" id="slider-content">
+          <div class="slider__images">
+            <div class="slider__images-item slider__images-item--active" data-id="1"><img src="./img/bosques-slider.jpg"/></div>
+            <div class="slider__images-item" data-id="2"><img src="./img/cascada-slider.jpg"/></div>
+            <div class="slider__images-item" data-id="3"><img src="./img/rios-slider.jpeg"/></div>
+            <div class="slider__images-item" data-id="4"><img src="./img/senderismo-slider.jpeg"/></div>
+            <div class="slider__images-item" data-id="5"><img src="./img/alpinismo-slider.jpg"/></div>
+          </div>
+          <div class="slider__text">
+            <div class="slider__text-item slider__text-item--active" data-id="1">
+              <div class="slider__text-item-head">
+                <h3>Bosques</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>“Necesitas una sensación de paz y relajación, camina por el bosque”. Byron Pulsifer</p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="2">
+              <div class="slider__text-item-head">
+                <h3>Cascadas</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>“No hay mejor lugar para encontrarse con uno mismo que sentarse junto a una cascada y escuchar su música.”
+                  Roland R Kemler</p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="3">
+              <div class="slider__text-item-head">
+                <h3>Ríos</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>“Un río atraviesa la roca no por su poder sino por su persistencia”. Jim Watkins</p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="4">
+              <div class="slider__text-item-head">
+                <h3>Senderismo</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>“Caminar por la naturaleza es presenciar mil milagros.”
+                  Mary Davis</p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="5">
+              <div class="slider__text-item-head">
+                <h3>Alpinismo</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>“Persigo la felicidad. Y la montaña responde a mi búsqueda." Chantal Maudit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <div class="slider__nav-arrows">
+            <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+            <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+          </div>
+          <div class="slider__nav-dots" id="slider-dots">
+            <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+            <div class="slider__nav-dot" data-id="2"></div>
+            <div class="slider__nav-dot" data-id="3"></div>
+            <div class="slider__nav-dot" data-id="4"></div>
+            <div class="slider__nav-dot" data-id="5"></div>
+          </div>
+        </div>
+      </div>
+    <!-- Fin Slider -->
+    
+    <main>
+      <!-- Presentación San Francisco -->
+      <div class="presentacion__sanfrancisco">
+          <div class="contenedor__imagen__principal">
+            <img class="imagen imagen-separacion"
+            src="./img/sanfrancisco.jpg" alt="Foto San Francisco Portada">
+          </div>
+          <div class="texto">
+            <h2 class="texto__titulo">San Francisco del Monte de Oro</h2>
+            <p class="texto__detalle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum veniam praesentium porro cupiditate at ut molestiae dolores libero dignissimos, repudiandae placeat est reiciendis vel eveniet distinctio esse blanditiis tempora dolorem.</p>
+            <p class="texto__detalle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo natus necessitatibus maxime nulla minima, eius voluptates dolor eos, hic molestias veritatis reiciendis laboriosam sed placeat, mollitia quod omnis porro quia.</p>
+            <p class="texto__detalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil magnam, maxime placeat magni asperiores corrupti tempore veniam rem odio fuga consectetur corporis natus adipisci aut quidem eligendi commodi ad.</p>
+          </div>
+      </div>
+      
+      <!-- Pequeña galeria -->
+      <div class="pequeña__galeria">
+          <img class="imagen pequeña" src="./img/galeria1.jpeg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria2.jpeg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria3.jpeg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria4.jpeg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria5.jpg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria6.jpg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria7.jpg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria8.jpg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria9.jpg" alt="Foto Galeria Index">
+          <img class="imagen pequeña" src="./img/galeria10.jpeg" alt="Foto Galeria Index">
+      </div>
+
+      <!-- Ubicación -->
+      <div class="presentacion__ubicacion">
+        <div class="texto__ubicacion">
+          <h2 class="texto__titulo">Ubicación</h2>
+          <p class="texto__detalle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum veniam praesentium porro cupiditate at ut molestiae dolores libero dignissimos, repudiandae placeat est reiciendis vel eveniet distinctio esse blanditiis tempora dolorem.</p>
+          <p class="texto__detalle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit doloribus laboriosam itaque fugit nostrum natus sapiente maxime! Reprehenderit, aliquid, aperiam omnis, optio ad quaerat laboriosam voluptas id minima asperiores dicta.</p>
+          <p class="texto__detalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aperiam adipisci necessitatibus eaque reprehenderit, perspiciatis sequi maxime minus optio veniam deserunt eum tempore impedit, neque dignissimos culpa nostrum explicabo alias.</p>
+        </div>  
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19012.937135917753!2d-66.12664015056535!3d-32.60500565667035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4915b0c038ccf%3A0x77793f104b8e5953!2sSan%20Francisco%20del%20Monte%20de%20Oro%2C%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1658411220774!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="pie">
+        <div class="pie__redes">
+            <p>Siguenos en Redes</p>
+            <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="./img/facebook.svg" alt="icono Facebook"></a>
+            <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="./img/instagram.svg" alt="icono Instagram"></a>
+            <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="./img/whatsapp.svg" alt="icono WhatsApp"></a>
+        </div>
+        <div class="pie__derechos">
+            <p>Brujo Excursiones - Todos los derechos reservados - 2022</p>
+        </div>
+        <div class="pie__domicilio">
+            <p>Calle XXXX Altura 123</p>
+            <p>Te: 1234-567890</p>
+            <p>mail@mail.com</p>
+        </div>
+      </div>
+      <!-- JavaScript para el Slider -->
+      <script src="./js/app.js"></script>
+    </footer>
+</body>
+</html>
