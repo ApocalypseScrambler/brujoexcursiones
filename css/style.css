@@ -20,7 +20,7 @@ html {
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: inherit;   
 }
 
 img {
@@ -181,6 +181,7 @@ img {
   display: flex;
   perspective: 1000px;
   transform-style: preserve-3d;
+  width: 100%;
 }
 .slider::before,
 .slider::after {
