@@ -613,8 +613,7 @@ body {
   .detalle__excursion--reverse {
     flex-direction: column;
     align-items: center;  
-    margin: 2rem;
-    margin-top: 4rem;
+    margin: 4rem 2rem 2rem 2rem;
   }
 
   .texto__ubicacion,
@@ -631,8 +630,7 @@ body {
 }
 
 .texto__salida {
-  margin: 0;
-  margin-top: 2rem;
+  margin: 2rem 0 0 0;
 }
 
 .proxima__salida {
@@ -693,11 +691,10 @@ body {
 .videos {
   display: flex;
   flex-flow: column wrap;
-  margin: auto;
+  margin: auto auto 2rem auto;
   justify-content: center;
   align-content: center;
-  max-width: 150rem;  
-  margin-bottom: 2rem;
+  max-width: 150rem;
 }
 
 .imagen__galeria {
@@ -806,7 +803,7 @@ body {
   background-color: var(--blanco);
   display: grid;
   place-items: center;
-  font-weight: var(--oscuro);
+  font-weight: 700;
   font-size: 3rem;
   border-radius: 50%;
 }
