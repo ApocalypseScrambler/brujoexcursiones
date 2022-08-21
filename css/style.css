@@ -254,19 +254,19 @@ body {
   transition: left 0s 0.75s;
 }
 .slide-one {
-  background-image: url("/img/bosques-slider.jpg");
+  background-image: url("../img/bosques-slider.jpg");
 }
 .slide-two {
-  background-image: url("/img/cascada-slider.jpg");
+  background-image: url("../img/cascada-slider.jpg");
 }
 .slide-three {
-  background-image: url("/img/rios-slider.jpeg");
+  background-image: url("../img/rios-slider.jpeg");
 }
 .slide-four {
-  background-image: url("/img/senderismo-slider.jpeg");
+  background-image: url("../img/senderismo-slider.jpeg");
 }
 .slide-five {
-  background-image: url("/img/alpinismo-slider.jpg");
+  background-image: url("../img/alpinismo-slider.jpg");
 }
 
 [id^=slide]:checked + .slide {
