@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Hoja de estilos -->
+    <link rel="preload" href="../css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -39,15 +41,60 @@
 
     </header>  
     <!-- Barra de Navegación -->
+    <nav class="navegacion-chica navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas-header flex-column">
+            <div class="logo__encabezado">
+              <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo"></a>
+            </div>  
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
+            
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./excursiones.html">Excursiones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./salidas.html">Salidas Grupales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Imágenes y Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li style="height: 50px;"></li>
+              <li class="nav-item">
+                <p>Siguenos en Redes</p>
+                <div>
+                  <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="../img/facebook.svg" alt="icono Facebook"></a>
+                  <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="../img/instagram.svg" alt="icono Instagram"></a>
+                  <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="../img/whatsapp.svg" alt="icono WhatsApp"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <nav class="nav-bg">
-      
-        <ul class="navegacion">
-          <li class="list-item"><a href="../index.html">Inicio</a></li>
-          <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
-          <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
-          <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
-          <li class="list-item"><a href="./contacto.html">Contacto</a></li>
-        </ul>
+      <ul class="navegacion">
+        <li class="list-item"><a href="../index.html">Inicio</a></li>
+        <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
+        <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
+        <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
+        <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+      </ul>
     </nav>
     
     <!-- Excursiones -->
@@ -57,7 +104,7 @@
 
     <div class="excursiones">
         <div class="detalle__excursion">
-          <div>
+          <div class="container-fluid d-flex justify-content-center">
             <img class="imagen__excursion" src="../img/SaltoIndio.jpg" alt="Trekking Salto Escondido">
           </div>
           <div class="texto">
@@ -69,7 +116,7 @@
       </div>
 
         <div class="detalle__excursion--reverse">
-          <div>  
+          <div class="container-fluid d-flex justify-content-center">  
             <img class="imagen__excursion" src="../img/SenderismoMontaña.jpg" alt="Senderismo de Montaña">
           </div>
           <div class="texto">
@@ -81,7 +128,7 @@
         </div>
 
         <div class="detalle__excursion">
-          <div>
+          <div class="container-fluid d-flex justify-content-center">
             <img class="imagen__excursion" src="../img/Condor.jpg" alt="Trekking Paso del Condor">
           </div>
           <div class="texto">
@@ -93,7 +140,7 @@
         </div>
 
         <div class="detalle__excursion--reverse">
-          <div>  
+          <div class="container-fluid d-flex justify-content-center">  
             <img class="imagen__excursion" src="../img/Alpinismo.jpg" alt="Alpinismo">
           </div>
           <div class="texto">
@@ -105,7 +152,7 @@
         </div>
 
         <div class="detalle__excursion">
-          <div class="contenedor__imagen">   
+          <div class="container-fluid d-flex justify-content-center">   
             <img class="imagen__excursion" src="../img/Campamento.jpg" alt="Campamentos">
           </div>
           <div class="texto">
@@ -137,5 +184,6 @@
           </div>
         </div>
       </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

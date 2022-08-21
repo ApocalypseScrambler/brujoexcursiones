@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Hoja de estilos -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
@@ -41,6 +43,52 @@
     </header>  
     
     <!-- Barra de Navegación -->
+    <nav class="navegacion-chica navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas-header flex-column">
+            <div class="logo__encabezado">
+              <a title="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="Logo"></a>
+            </div>  
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
+            
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/excursiones.html">Excursiones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/salidas.html">Salidas Grupales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Imágenes y Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li style="height: 50px;"></li>
+              <li class="nav-item">
+                <p>Siguenos en Redes</p>
+                <div>
+                  <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="./img/facebook.svg" alt="icono Facebook"></a>
+                  <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="./img/instagram.svg" alt="icono Instagram"></a>
+                  <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="./img/whatsapp.svg" alt="icono WhatsApp"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     <nav class="nav-bg">
       <ul class="navegacion">
         <li class="list-item"><a href="./index.html">Inicio</a></li>
@@ -57,75 +105,48 @@
     </div>
     
     <!-- Slider -->
-    <div class="slider" id="slider" style="--img-prev:url(./img/bosques-slider.jpg);"> 
-        <div class="slider__content" id="slider-content">
-          <div class="slider__images">
-            <div class="slider__images-item slider__images-item--active" data-id="1"><img src="./img/bosques-slider.jpg"/></div>
-            <div class="slider__images-item" data-id="2"><img src="./img/cascada-slider.jpg"/></div>
-            <div class="slider__images-item" data-id="3"><img src="./img/rios-slider.jpeg"/></div>
-            <div class="slider__images-item" data-id="4"><img src="./img/senderismo-slider.jpeg"/></div>
-            <div class="slider__images-item" data-id="5"><img src="./img/alpinismo-slider.jpg"/></div>
-          </div>
-          <div class="slider__text">
-            <div class="slider__text-item slider__text-item--active" data-id="1">
-              <div class="slider__text-item-head">
-                <h3>Bosques</h3>
-              </div>
-              <div class="slider__text-item-info">
-                <p>“Necesitas una sensación de paz y relajación, camina por el bosque”. Byron Pulsifer</p>
-              </div>
-            </div>
-            <div class="slider__text-item" data-id="2">
-              <div class="slider__text-item-head">
-                <h3>Cascadas</h3>
-              </div>
-              <div class="slider__text-item-info">
-                <p>“No hay mejor lugar para encontrarse con uno mismo que sentarse junto a una cascada y escuchar su música.”
-                  Roland R Kemler</p>
-              </div>
-            </div>
-            <div class="slider__text-item" data-id="3">
-              <div class="slider__text-item-head">
-                <h3>Ríos</h3>
-              </div>
-              <div class="slider__text-item-info">
-                <p>“Un río atraviesa la roca no por su poder sino por su persistencia”. Jim Watkins</p>
-              </div>
-            </div>
-            <div class="slider__text-item" data-id="4">
-              <div class="slider__text-item-head">
-                <h3>Senderismo</h3>
-              </div>
-              <div class="slider__text-item-info">
-                <p>“Caminar por la naturaleza es presenciar mil milagros.”
-                  Mary Davis</p>
-              </div>
-            </div>
-            <div class="slider__text-item" data-id="5">
-              <div class="slider__text-item-head">
-                <h3>Alpinismo</h3>
-              </div>
-              <div class="slider__text-item-info">
-                <p>“Persigo la felicidad. Y la montaña responde a mi búsqueda." Chantal Maudit</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slider__nav">
-          <div class="slider__nav-arrows">
-            <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
-            <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
-          </div>
-          <div class="slider__nav-dots" id="slider-dots">
-            <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
-            <div class="slider__nav-dot" data-id="2"></div>
-            <div class="slider__nav-dot" data-id="3"></div>
-            <div class="slider__nav-dot" data-id="4"></div>
-            <div class="slider__nav-dot" data-id="5"></div>
-          </div>
-        </div>
+    <div class="wrap">
+      <div class="lista-slider">
+          <label for="slide-1-trigger">Bosques</label>
+          <label for="slide-2-trigger">Cascadas</label>
+          <label for="slide-3-trigger">Ríos</label>
+          <label for="slide-4-trigger">Senderismo</label>
+          <label for="slide-5-trigger">Alpinismo</label>
       </div>
-    <!-- Fin Slider -->
+  
+      <input id="slide-1-trigger" type="radio" name="slides" checked>
+      <section class="slide slide-one">
+          <h2 class="texto-slider">Bosques</h2>
+          <h3 class="texto-frase-slider">“Necesitas una sensación de paz y relajación, camina por el bosque”</h3>
+          <h3 class="texto-frase-slider">Byron Pulsifer</h3>
+      </section>
+      <input id="slide-2-trigger" type="radio" name="slides">
+      <section class="slide slide-two">
+        <h2 class="texto-slider">Cascadas</h2>
+        <h3 class="texto-frase-slider">“No hay mejor lugar para encontrarse con uno mismo que sentarse junto a una cascada y escuchar su música.”</h3>
+        <h3 class="texto-frase-slider">Roland R Kemler</h3>
+      </section>
+      <input id="slide-3-trigger" type="radio" name="slides">
+      <section class="slide slide-three">
+        <h2 class="texto-slider">Rios</h2>
+        <h3 class="texto-frase-slider">“Un río atraviesa la roca no por su poder sino por su persistencia”</h3>
+        <h3 class="texto-frase-slider">Jim Watkins</h3>
+      </section>
+      <input id="slide-4-trigger" type="radio" name="slides">
+      <section class="slide slide-four">
+        <h2 class="texto-slider">Senderismo</h2>
+        <h3 class="texto-frase-slider">“Caminar por la naturaleza es presenciar mil milagros”</h3>
+          <h3 class="texto-frase-slider">Mary Davis</h3>
+      </section>
+      <input id="slide-5-trigger" type="radio" name="slides">
+      <section class="slide slide-five">
+        <h2 class="texto-slider">Alpinismo</h2>
+        <h3 class="texto-frase-slider">“Persigo la felicidad. Y la montaña responde a mi búsqueda"</h3>
+        <h3 class="texto-frase-slider">Chantal Maudit</h3>
+      </section>
+  
+  </div>
+  <!-- Fin Slider -->
     
     <main>
       <!-- Presentación San Francisco -->
@@ -186,8 +207,8 @@
             <p>mail@mail.com</p>
         </div>
       </div>
-      <!-- JavaScript para el Slider -->
-      <script src="./js/app.js"></script>
+      
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

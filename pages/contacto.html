@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Hoja de estilos -->
+    <link rel="preload" href="../css/bootstrap.min.css" as="style">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -39,16 +41,62 @@
 
     </header>  
     <!-- Barra de Navegación -->
-    <nav class="nav-bg">
-      
-        <ul class="navegacion">
-          <li class="list-item"><a href="../index.html">Inicio</a></li>
-          <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
-          <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
-          <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
-          <li class="list-item"><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="navegacion-chica navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas-header flex-column">
+            <div class="logo__encabezado">
+              <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo"></a>
+            </div>  
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
+            
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./excursiones.html">Excursiones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./salidas.html">Salidas Grupales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Imágenes y Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li style="height: 50px;"></li>
+              <li class="nav-item">
+                <p>Siguenos en Redes</p>
+                <div>
+                  <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="../img/facebook.svg" alt="icono Facebook"></a>
+                  <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="../img/instagram.svg" alt="icono Instagram"></a>
+                  <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="../img/whatsapp.svg" alt="icono WhatsApp"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
+    <nav class="nav-bg">
+      <ul class="navegacion">
+        <li class="list-item"><a href="../index.html">Inicio</a></li>
+        <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
+        <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
+        <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
+        <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
     <!-- Titulo Página -->
     <div class="titulo__pagina">
         <h1>Brujo Excursiones - Formulario de Contacto</h1>
@@ -58,38 +106,38 @@
       <h2 class="texto__titulo">Contactános</h2>
       <div class="contacto-bg imagen"></div>
       <form class="formulario">
-          <div class="campo">
-              <label class="campo__label" for="nombre">Nombre</label>
-              <input class="campo__field" type="text" placeholder="Tu Nombre" id="nombre">
-          </div>
-          <div class="campo">
-              <label class="campo__label" for="excursiones">Excursión</label>
-              <select class="campo__field" name="excursiones" id="excursiones">
-                  <option value="escondido">Trekking Salto Escondido</option>
-                  <option value="montaña">Senderismo de Montaña</option>
-                  <option value="condor">Trekking Paso del Condor</option>
-                  <option value="alpinismo">Alpinismo</option>
-                  <option value="campamento">Campamentos</option>
-                </select>
-          </div>
-          <div class="campo">
-              <label class="campo__label" for="email">Mail</label>
-              <input class="campo__field" type="email" placeholder="Tu Email" id="email">
-          </div>
-          <div class="campo">
-              <label class="campo__label" for="mensaje">Mensaje</label>
-              <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
-          </div>
-          <div class="campo">
-              <label class="campo__checkbox" for="infosalidas">
-                  <input type="checkbox" name="infosalidas" id="infosalidas">
-                  Deseo recibir información sobre salidas grupales
-              </label>
-          </div>
-          <div class="botones__contacto">
-              <input type="reset" value="Limpiar Datos" class="boton boton--primario">
-              <input type="submit" value="Enviar" class="boton boton--primario">
-          </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+          <label for="nombre">Nombre</label>
+        </div>  
+        <div class="form-floating mb-3">
+          <select class="form-select" id="excursiones">
+            <option value="escondido">Trekking Salto Escondido</option>
+            <option value="montaña">Senderismo de Montaña</option>
+            <option value="condor">Trekking Paso del Condor</option>
+            <option value="alpinismo">Alpinismo</option>
+            <option value="campamento">Campamentos</option>
+          </select>
+          <label for="excursiones">Excursión</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Mail">
+          <label for="email">Mail</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px"></textarea>
+          <label for="mensaje">Mensaje</label>
+        </div>
+        <div class="form-check mb-5">
+          <input class="form-check-input" type="checkbox" value="" id="infosalidas" checked>
+          <label class="form-check-label" for="infosalidas">
+            Deseo recibir información sobre salidas grupales
+          </label>
+        </div>
+        <div class="botones__contacto">
+          <input type="reset" value="Limpiar Datos" class="boton boton--primario">
+          <input type="submit" value="Enviar" class="boton boton--primario">
+        </div>
       </form>
     </main>
 
@@ -112,5 +160,6 @@
           </div>
         </div>
       </footer>
+      <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

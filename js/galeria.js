@@ -54,9 +54,10 @@ function mostrarImagen(e) {
 
     // Boton para cerrar la imagen
     const cerrarImagen = document.createElement('P');
-    cerrarImagen.textContent = 'X';
     cerrarImagen.classList.add('btn-cerrar');
-
+    cerrarImagen.classList.add('btn-close');
+    cerrarImagen.classList.add('btn-close-white');
+     
     // Cuando se presiona, se cierra la imagen
     cerrarImagen.onclick = function() {
         // Agregamos la clase para la salida
