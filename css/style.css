@@ -136,7 +136,6 @@ img {
 
 .navegacion a:hover,
 .proxima__salida a:hover {
-  background-color: var(--primario);
   color: var(--oscuro);
 }
 
@@ -691,10 +690,6 @@ video {
   transition: all 0.25s linear;
   cursor: pointer;
   box-shadow: -6px 6px rgba(0,0,0,0.5);
-}
-
-.boton--primario {
-  background-color: var(--negro);
 }
 
 /* Footer */
