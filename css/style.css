@@ -647,14 +647,21 @@ footer {
 }
 
 .imagen__excursion {
-  width: 30rem;
+  width: 45rem;
   height: 30rem;
 }
 
 @media (max-width: 768px) {
   .imagen__excursion {
-    width: 90%;
     height: 30rem;
+  }
+}
+@media (max-width: 992px) {
+  .detalle__excursion,
+.detalle__excursion--reverse {
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem 2rem 2rem;
   }
 }
 .detalle__excursion--reverse {
@@ -667,6 +674,10 @@ footer {
 .imagen__excursion {
   border-radius: 8px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.imagen-separacion {
+  height: 100%;
 }
 
 @media (max-width: 576px) {
@@ -727,9 +738,7 @@ footer {
 /* Responsive index para mapa y detalle presentación */
 @media (max-width: 768px) {
   .presentacion__sanfrancisco,
-.presentacion__ubicacion,
-.detalle__excursion,
-.detalle__excursion--reverse {
+.presentacion__ubicacion {
     flex-direction: column;
     align-items: center;
     margin: 4rem 2rem 2rem 2rem;
