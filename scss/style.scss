@@ -1,0 +1,443 @@
+@import 'base/normalize';
+
+@import 'base/variables';
+@import 'base/globales';
+
+@import 'layout/slider';
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/footer';
+
+
+
+/************************************************************
+   Index 
+   ***********************************************************/
+.presentacion__sanfrancisco,
+.presentacion__ubicacion,
+.detalle__excursion,
+.detalle__excursion--reverse {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin: 2rem;
+  justify-content: space-around;
+}
+
+.detalle__excursion,
+.detalle__excursion--reverse {
+  justify-content: flex-start;
+}
+
+.imagen__excursion {
+  width: 30rem;
+  height: 30rem;
+}
+
+@media (max-width:768px) {
+  .imagen__excursion {
+    width: 90%;
+    height: 30rem;
+  }
+}
+
+.detalle__excursion--reverse {
+  flex-direction: row-reverse;
+}
+
+/* clase "imagen" lo usamos en varias páginas */
+.imagen,
+.mapa,
+.imagen__excursion {
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width:576px) {
+  .imagen-separacion {
+    margin-top: 2rem;
+  }
+}
+
+/* Galeria del Index */
+.pequeña__galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 0;
+  justify-items: center;
+}
+
+.pequeña {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Responsive para la galería del Index */
+@media (max-width:992px) {
+  .pequeña__galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width:768px) {
+  .pequeña__galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:576px) {
+  .pequeña__galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Titulos de textos, lo usamos en todas las páginas */
+.texto__titulo {
+  font-size: large;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.texto__detalle {
+  font-size: medium;
+}
+
+/* Controlamos tamaño textos y mapa del index */
+.texto__ubicacion {
+  width: 40%;
+}
+
+.mapa {
+  width: 60%;
+}
+
+/* Responsive index para mapa y detalle presentación */
+@media (max-width: 768px) {
+
+  .presentacion__sanfrancisco,
+  .presentacion__ubicacion,
+  .detalle__excursion,
+  .detalle__excursion--reverse {
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem 2rem 2rem;
+  }
+
+  .texto__ubicacion,
+  .mapa {
+    width: 100%;
+  }
+}
+
+/************************************************************
+   Salidas Grupales 
+   ***********************************************************/
+.salidas {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.texto__salida {
+  margin: 2rem 0 0 0;
+}
+
+.proxima__salida {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  gap: 2rem;
+}
+
+.proxima__salida a {
+  color: $blanco;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.proxima__salida a:hover {
+  color: $oscuro;
+}
+
+.contacto {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+@media (max-width: 830px) {
+  .contacto-btn {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .contacto-btn {
+    width: 10rem;
+  }
+}
+
+.imagenes_proxima_salida {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagen__salida {
+  width: 40rem;
+  height: 40rem;
+}
+
+@media (max-width:992px) {
+  .imagen__salida {
+    width: 35rem;
+    height: 35rem;
+  }
+}
+
+@media (max-width:768px) {
+  .imagen__salida {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width:576px) {
+  .imagenes_proxima_salida {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/************************************************************
+   Galeria principal 
+   ***********************************************************/
+.galeria,
+.videos {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto auto 2rem auto;
+  justify-content: center;
+  align-content: center;
+  max-width: 150rem;
+}
+
+.imagen__galeria {
+  width: 25rem;
+  height: 25rem;
+}
+
+.item__galeria {
+  text-align: center;
+}
+
+/* Imagen visualizada en mayor tamaño con animación */
+.imagen__grande {
+  width: 50rem;
+  height: 50rem;
+  animation: EntradaImagen 1s ease 0s 1 normal forwards;
+}
+
+@keyframes EntradaImagen {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fadeOut {
+  animation: SalidaImagen 1s ease 0s 1 normal forwards;
+}
+
+@keyframes SalidaImagen {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Fin animaciones imagen__grande */
+
+.galeria-imagenes {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive para Galeria principal */
+@media (max-width:1200px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item__galeria:last-of-type {
+    grid-area: 7 / 3 / 8 / 4;
+  }
+}
+
+@media (max-width:915px) {
+  .imagen__galeria {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .imagen__grande {
+    width: 45rem;
+    height: 45rem;
+  }
+}
+
+@media (max-width:730px) {
+  .galeria-imagenes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item__galeria:last-of-type {
+    grid-area: 10 / 2 / 11 / 3;
+  }
+
+  .imagen__grande {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+/* overlay, btn-cerrar se insertan desde galeria.js */
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: grid;
+  place-items: center;
+}
+
+.btn-cerrar {
+  width: 5rem;
+  height: 5rem;
+  background-color: $blanco;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+
+.btn-cerrar:hover {
+  cursor: pointer;
+}
+
+.videos__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  justify-items: center;
+}
+
+video {
+  border: #000 1px solid;
+  background-color: #000;
+}
+
+/* Responsive para galeria principal videos */
+@media (max-width:675px) {
+  .videos__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/************************************************************
+   Contacto
+   ***********************************************************/
+.contenedor {
+  width: min(90%, 120rem);
+  margin: 0 auto;
+}
+
+.contacto-bg {
+  background-image: url(../img/contacto.jpg);
+  height: 40rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 2rem;
+}
+
+.formulario {
+  background-color: $blanco;
+  margin: -5rem auto 2rem auto;
+  width: 95%;
+  padding: 5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+}
+
+.campo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin-bottom: 2rem;
+}
+
+.campo__label {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.campo__field {
+  border: 1px solid #8a8a8a;
+  border-radius: 8px;
+  grid-area: 1 / 2 / 2 / 5;
+}
+
+.campo__checkbox {
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+.campo__field--textarea {
+  height: 20rem;
+}
+
+.botones__contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.boton {
+  color: #000;
+  text-align: center;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-shadow: -3px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .boton {
+    display: inline-block;
+  }
+}
+
+.boton:hover {
+  transform: translate(0.4em, -0.4em);
+  transition: all 0.25s linear;
+  cursor: pointer;
+  box-shadow: -6px 6px rgba(0, 0, 0, 0.5);
+}

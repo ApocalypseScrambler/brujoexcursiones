@@ -1,0 +1,29 @@
+/** Globales **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(85, 123, 131, 1) 0%, rgba(57, 174, 169, 1) 40%, rgba(162, 213, 171, 1) 70%, rgba(229, 239, 193, 1) 100%);
+    font-family: $fuente-principal;
+}

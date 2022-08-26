@@ -1,0 +1,30 @@
+/* Footer */
+.icono {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(100%);
+}
+
+footer {
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $blanco;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+/* Responsive del footer */
+@media (max-width: 600px) {
+    .pie {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.54.5"
+  },
+  "name": "brujoexcursiones",
+  "description": "Proyecto CoderHouse Diseño Web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/style.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
