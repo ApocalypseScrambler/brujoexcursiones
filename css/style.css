@@ -308,7 +308,7 @@ template {
   display: none;
 }
 
-/* Variables */ /** Globales **/
+/** Globales **/
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -458,13 +458,13 @@ body {
   padding: 1rem;
 }
 .navegacion a {
-  color: var(--blanco);
+  color: #fafafa;
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 700;
 }
 .navegacion:hover {
-  color: var(--oscuro);
+  color: rgb(17, 17, 17);
 }
 
 .navegacion-chica {
@@ -477,9 +477,9 @@ body {
 }
 
 .list-item {
-  box-shadow: -3px 3px var(--oscuro);
+  box-shadow: -3px 3px rgb(17, 17, 17);
   background-color: #39AEA9;
-  border: 1px solid var(--oscuro);
+  border: 1px solid rgb(17, 17, 17);
   border-radius: 8px;
   position: relative;
   display: block;
@@ -488,13 +488,13 @@ body {
   width: 15rem;
 }
 .list-item:hover {
-  box-shadow: -6px 6px var(--oscuro);
-  color: var(--blanco);
+  box-shadow: -6px 6px rgb(17, 17, 17);
+  color: #fafafa;
   transform: translate(0.4em, -0.4em);
 }
 
 /* Responsive para barra de navegación */
-@media (max-width: 830px) {
+@media (max-width: 768px) {
   .navegacion {
     display: none;
   }
@@ -621,7 +621,7 @@ footer {
 }
 
 /* Responsive del footer */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .pie {
     flex-direction: column;
     align-items: center;
@@ -646,6 +646,10 @@ footer {
   justify-content: flex-start;
 }
 
+.detalle__excursion--reverse {
+  flex-direction: row-reverse;
+}
+
 .imagen__excursion {
   width: 45rem;
   height: 30rem;
@@ -662,12 +666,9 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 4rem 2rem 2rem 2rem;
+    flex-direction: column;
   }
 }
-.detalle__excursion--reverse {
-  flex-direction: row-reverse;
-}
-
 /* clase "imagen" lo usamos en varias páginas */
 .imagen,
 .mapa,
@@ -784,12 +785,7 @@ footer {
   padding: 0;
 }
 
-@media (max-width: 830px) {
-  .contacto-btn {
-    width: 15rem;
-  }
-}
-@media (max-width: 580px) {
+@media (max-width: 576px) {
   .contacto-btn {
     width: 10rem;
   }
@@ -894,7 +890,7 @@ footer {
     grid-area: 7/3/8/4;
   }
 }
-@media (max-width: 915px) {
+@media (max-width: 992px) {
   .imagen__galeria {
     width: 20rem;
     height: 20rem;
@@ -904,7 +900,7 @@ footer {
     height: 45rem;
   }
 }
-@media (max-width: 730px) {
+@media (max-width: 768px) {
   .galeria-imagenes {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -950,12 +946,12 @@ footer {
 }
 
 video {
-  border: #000 1px solid;
+  border: 1px solid #000;
   background-color: #000;
 }
 
 /* Responsive para galeria principal videos */
-@media (max-width: 675px) {
+@media (max-width: 768px) {
   .videos__item {
     display: flex;
     flex-direction: column;

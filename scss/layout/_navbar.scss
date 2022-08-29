@@ -11,14 +11,14 @@
     padding: 1rem;
 
     a {
-        color: var(--blanco);
+        color: $blanco;
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 700;
     }
 
     &:hover {
-        color: var(--oscuro);
+        color: $oscuro;
     }
 }
 
@@ -32,9 +32,9 @@
 }
 
 .list-item {
-    box-shadow: -3px 3px var(--oscuro);
+    box-shadow: -3px 3px $oscuro;
     background-color: #39AEA9;
-    border: 1px solid var(--oscuro);
+    border: 1px solid $oscuro;
     border-radius: 8px;
     position: relative;
     display: block;
@@ -43,14 +43,14 @@
     width: 15rem;
 
     &:hover {
-        box-shadow: -6px 6px var(--oscuro);
-        color: var(--blanco);
+        box-shadow: -6px 6px $oscuro;
+        color: $blanco;
         transform: translate(0.4em, -0.4em);
     }
 }
 
 /* Responsive para barra de navegación */
-@media (max-width: 830px) {
+@include tablet {
     .navegacion {
         display: none;
     }

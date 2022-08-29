@@ -22,7 +22,7 @@ footer {
 }
 
 /* Responsive del footer */
-@media (max-width: 600px) {
+@include moviles {
     .pie {
         flex-direction: column;
         align-items: center;

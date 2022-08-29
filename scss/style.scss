@@ -2,6 +2,7 @@
 
 @import 'base/variables';
 @import 'base/globales';
+@import 'base/mixins';
 
 @import 'layout/slider';
 @import 'layout/navbar';
@@ -29,29 +30,32 @@
   justify-content: flex-start;
 }
 
+.detalle__excursion--reverse {
+  flex-direction: row-reverse;
+}
+
 .imagen__excursion {
   width: 45rem;
   height: 30rem;
 }
 
-@media (max-width:768px) {
+@include tablet {
   .imagen__excursion {
     height: 30rem;
   }
 }
 
-@media (max-width:992px) {
+@include desktop {
   .detalle__excursion,
   .detalle__excursion--reverse {
       flex-direction: column;
       align-items: center;
       margin: 4rem 2rem 2rem 2rem;
+      flex-direction: column;
   }
 }
 
-.detalle__excursion--reverse {
-  flex-direction: row-reverse;
-}
+
 
 /* clase "imagen" lo usamos en varias páginas */
 .imagen,
@@ -65,7 +69,7 @@
   height: 100%;
 }
 
-@media (max-width:576px) {
+@include moviles {
   .imagen-separacion {
     margin-top: 2rem;
   }
@@ -86,19 +90,19 @@
 }
 
 /* Responsive para la galería del Index */
-@media (max-width:992px) {
+@include desktop {
   .pequeña__galeria {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media (max-width:768px) {
+@include tablet {
   .pequeña__galeria {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width:576px) {
+@include moviles {
   .pequeña__galeria {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -107,7 +111,7 @@
 /* Titulos de textos, lo usamos en todas las páginas */
 .texto__titulo {
   font-size: large;
-  border: 1px solid #000;
+  border: $borde-negro;
   text-align: center;
 }
 
@@ -125,7 +129,7 @@
 }
 
 /* Responsive index para mapa y detalle presentación */
-@media (max-width: 768px) {
+@include tablet {
 
   .presentacion__sanfrancisco,
   .presentacion__ubicacion {
@@ -176,13 +180,7 @@
   padding: 0;
 }
 
-@media (max-width: 830px) {
-  .contacto-btn {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 580px) {
+@include moviles {
   .contacto-btn {
     width: 10rem;
   }
@@ -201,21 +199,21 @@
   height: 40rem;
 }
 
-@media (max-width:992px) {
+@include desktop {
   .imagen__salida {
     width: 35rem;
     height: 35rem;
   }
 }
 
-@media (max-width:768px) {
+@include tablet {
   .imagen__salida {
     width: 30rem;
     height: 30rem;
   }
 }
 
-@media (max-width:576px) {
+@include moviles {
   .imagenes_proxima_salida {
     flex-direction: column;
     align-items: center;
@@ -288,7 +286,7 @@
 }
 
 /* Responsive para Galeria principal */
-@media (max-width:1200px) {
+@include desktop-xl {
   .galeria-imagenes {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -298,7 +296,7 @@
   }
 }
 
-@media (max-width:915px) {
+@include desktop {
   .imagen__galeria {
     width: 20rem;
     height: 20rem;
@@ -310,7 +308,7 @@
   }
 }
 
-@media (max-width:730px) {
+@include tablet {
   .galeria-imagenes {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -359,12 +357,12 @@
 }
 
 video {
-  border: #000 1px solid;
+  border: $borde-negro;
   background-color: #000;
 }
 
 /* Responsive para galeria principal videos */
-@media (max-width:675px) {
+@include tablet {
   .videos__item {
     display: flex;
     flex-direction: column;
@@ -394,7 +392,7 @@ video {
   width: 95%;
   padding: 5rem;
   font-size: 1.1rem;
-  border-radius: 8px;
+  border-radius: $borde-redondo;
 }
 
 .campo {
@@ -410,7 +408,7 @@ video {
 
 .campo__field {
   border: 1px solid #8a8a8a;
-  border-radius: 8px;
+  border-radius: $borde-redondo;
   grid-area: 1 / 2 / 2 / 5;
 }
 
@@ -434,12 +432,12 @@ video {
   padding: 1rem 3rem;
   text-transform: uppercase;
   font-weight: 700;
-  border: 1px solid #000;
-  border-radius: 8px;
+  border: $borde-negro;
+  border-radius: $borde-redondo;
   box-shadow: -3px 3px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 768px) {
+@include tablet {
   .boton {
     display: inline-block;
   }
