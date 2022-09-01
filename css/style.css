@@ -341,7 +341,6 @@ body {
 /* Slider */
 .texto-slider {
   color: #fff;
-  font-size: 2em;
   font-size: 6vw;
   line-height: 1.2;
   margin: 0.5em 0 0em;
@@ -666,7 +665,6 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 4rem 2rem 2rem 2rem;
-    flex-direction: column;
   }
 }
 /* clase "imagen" lo usamos en varias páginas */
