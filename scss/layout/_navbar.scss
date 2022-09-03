@@ -11,14 +11,14 @@
     padding: 1rem;
 
     a {
-        color: $blanco;
+        color: map-get($colores, blanco);
         text-decoration: none;
         font-size: 1.4rem;
         font-weight: 700;
-    }
-
-    &:hover {
-        color: $oscuro;
+        
+        &:hover {
+            color: map-get($colores, oscuro);
+        }
     }
 }
 
@@ -32,19 +32,16 @@
 }
 
 .list-item {
-    box-shadow: -3px 3px $oscuro;
-    background-color: #39AEA9;
-    border: 1px solid $oscuro;
-    border-radius: 8px;
+    @extend .boton;
     position: relative;
     display: block;
-    transition: all 0.25s linear;
-    text-align: center;
     width: 15rem;
+    background-color: #39AEA9;
+    transition: all 0.25s linear;
 
     &:hover {
-        box-shadow: -6px 6px $oscuro;
-        color: $blanco;
+        box-shadow: -6px 6px map-get($colores, oscuro);
+        color: map-get($colores, oscuro);
         transform: translate(0.4em, -0.4em);
     }
 }
