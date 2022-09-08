@@ -88,21 +88,28 @@
 }
 
 /* Responsive para la galería del Index */
-@include desktop {
+@media (max-width: 1100px) {
   .pequeña__galeria {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
-@include tablet {
+  
+@media (max-width: 900px) {
   .pequeña__galeria {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@include moviles {
+@media (max-width: 680px) {
   .pequeña__galeria {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 470px) {
+  .pequeña {
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -306,6 +313,13 @@
   }
 }
 
+@media (max-width: 450px) {
+  .imagen__galeria {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+  
 @include tablet {
   .galeria-imagenes {
     grid-template-columns: repeat(2, 1fr);

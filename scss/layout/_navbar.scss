@@ -1,4 +1,11 @@
 /* Barra de navegación */
+// Sobreescribimos el ancho del menú para dispositivos moviles
+@include moviles {
+    .offcanvas.offcanvas-end {
+        width: 24rem;
+    }
+}
+
 .navegacion {
     scroll-snap-align: center;
     scroll-snap-stop: always;

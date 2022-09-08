@@ -455,6 +455,11 @@ body {
 }
 
 /* Barra de navegación */
+@media (max-width: 576px) {
+  .offcanvas.offcanvas-end {
+    width: 24rem;
+  }
+}
 .navegacion {
   scroll-snap-align: center;
   scroll-snap-stop: always;
@@ -705,19 +710,25 @@ footer {
 }
 
 /* Responsive para la galería del Index */
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .pequeña__galeria {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .pequeña__galeria {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 680px) {
   .pequeña__galeria {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 470px) {
+  .pequeña {
+    width: 15rem;
+    height: 15rem;
   }
 }
 /* Titulos de textos, lo usamos en todas las páginas */
@@ -902,6 +913,12 @@ footer {
   .imagen__grande {
     width: 45rem;
     height: 45rem;
+  }
+}
+@media (max-width: 450px) {
+  .imagen__galeria {
+    width: 15rem;
+    height: 15rem;
   }
 }
 @media (max-width: 768px) {
