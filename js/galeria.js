@@ -11,7 +11,7 @@ function crearGaleria() {
         // Agregamos las clase para CSS
         imagen.classList.add('imagen');
         imagen.classList.add('imagen__galeria');
-        imagen.src = `../img/pequeña/${i}.jpeg`;
+        imagen.src = `../img/pequenia/${i}.jpeg`;
         imagen.dataset.imagenId = i;
 
         // Añadir la función de mostrarImagen
