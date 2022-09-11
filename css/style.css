@@ -736,6 +736,7 @@ footer {
   font-size: large;
   border: 1px solid #000;
   text-align: center;
+  font-weight: bold;
 }
 
 .texto__detalle {

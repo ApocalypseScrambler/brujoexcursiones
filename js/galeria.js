@@ -17,13 +17,18 @@ function crearGaleria() {
         // Añadir la función de mostrarImagen
         imagen.onclick = mostrarImagen;
 
-       const lista = document.createElement('LI');
-       // Agregamos la clase para CSS
-       lista.classList.add('item__galeria');
+        const texto = document.createElement('P');
+        texto.textContent = 'Haz clic para agrandar';
 
-       lista.appendChild(imagen);
 
-       galeria.appendChild(lista);
+        const lista = document.createElement('LI');
+        // Agregamos la clase para CSS
+        lista.classList.add('item__galeria');
+
+        lista.appendChild(imagen);
+        lista.appendChild(texto);
+
+        galeria.appendChild(lista);
     }
 }
 
