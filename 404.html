@@ -37,13 +37,23 @@
                             Parece que estás perdido
                         </h3>
                         <p class="texto__detalle">La página que buscas no se encuentra.</p>
-                        <a href="index.html" class="link_404">Volver al Inicio</a>
+                        <a href="#" id="redirect" class="link_404">Volver al Inicio</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script>
+        object.addEventListener("load", cambiarUrl);
+        function cambiarUrl() {
+            let url = windows.location.pathname;
+            let path = 'index.html'
+            if (url.includes('pages')) {
+                path = './index.html';
+            }
+            document.getElementById('redirect').href = path;
+        }
+    </script>
 </body>
 
 </html>
