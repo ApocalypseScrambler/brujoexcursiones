@@ -1,5 +1,4 @@
 @import 'base/normalize';
-
 @import 'base/variables';
 @import 'base/globales';
 @import 'base/mixins';
@@ -45,11 +44,12 @@
 }
 
 @include desktop {
+
   .detalle__excursion,
   .detalle__excursion--reverse {
-      flex-direction: column;
-      align-items: center;
-      margin: 4rem 2rem 2rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem 2rem 2rem;
   }
 }
 
@@ -93,7 +93,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-  
+
 @media (max-width: 900px) {
   .pequeña__galeria {
     grid-template-columns: repeat(3, 1fr);
@@ -172,7 +172,6 @@
 
 .proxima__salida a {
   color: map-get($colores, blanco);
-  text-decoration: none;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -320,7 +319,7 @@
     height: 15rem;
   }
 }
-  
+
 @include tablet {
   .galeria-imagenes {
     grid-template-columns: repeat(2, 1fr);
@@ -455,4 +454,42 @@ video {
   transition: all 0.25s linear;
   box-shadow: -6px 6px map-get($colores, oscuro);
   transform: translate(0.4em, -0.4em);
+}
+
+/************************************************************
+   404
+   ***********************************************************/
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
 }
