@@ -1,218 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brujo Excursiones</title>
-    <meta name="description" content="Te gusta el turismo aventura? este es tu lugar si deseas practicarlo
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brujo Excursiones</title>
+  <meta name="description" content="Te gusta el turismo aventura? este es tu lugar si deseas practicarlo
     en San Francisco del Monte de Oro. Turismo aventura, trekking, alpinismo y mas.">
- 
-    <meta name="keywords"
-    content="Turismo, San Luis, Aventura, Trekking, Alpinismo">
 
-    <meta http-equiv="expires" content="3600"/>
+  <meta name="keywords" content="Turismo, San Luis, Aventura, Trekking, Alpinismo">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
-    
-    <!-- Hoja de estilos -->
-    <link rel="preload" href="css/bootstrap.min.css" as="style">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="expires" content="3600" />
 
-    
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="preload" href="css/bootstrap.min.css" as="style">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">  
-        <div class="encabezado">
+  <!-- Header -->
+  <header class="header">
+    <div class="encabezado">
+      <div class="logo__encabezado">
+        <a title="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="Logo Brujo Excursiones"></a>
+      </div>
+      <div class="titulo__principal">
+        <p class="titulo-brujo">Brujo Excursiones</p>
+      </div>
+      <div class="titulo__secundario">
+        <p class="titulo-detalle">Agencia de Tours Ecologicos - San Francisco del Monte de Oro - San Luis</p>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Barra de Navegación -->
+  <nav class="navegacion-chica navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menú</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header flex-column">
           <div class="logo__encabezado">
             <a title="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="Logo Brujo Excursiones"></a>
-          </div>  
-          <div class="titulo__principal">
-            <p class="titulo-brujo">Brujo Excursiones</p>
           </div>
-          <div class="titulo__secundario">
-            <p class="titulo-detalle">Agencia de Tours Ecologicos - San Francisco del Monte de Oro - San Luis</p>
-          </div>
-        </div>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
 
-    </header>  
-    
-    <!-- Barra de Navegación -->
-    <nav class="navegacion-chica navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menú</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          <div class="offcanvas-header flex-column">
-            <div class="logo__encabezado">
-              <a title="logo" href="./index.html"><img class="logo" src="./img/logo.jpg" alt="Logo Brujo Excursiones"></a>
-            </div>  
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
-            
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/excursiones.html">Excursiones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/salidas.html">Salidas Grupales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/galeria.html">Imágenes y Video</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-              </li>
-              <li style="height: 50px;"></li>
-              <li class="nav-item">
-                <p>Siguenos en Redes</p>
-                <div>
-                  <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="./img/facebook.svg" alt="Icono Facebook"></a>
-                  <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="./img/instagram.svg" alt="Icono Instagram"></a>
-                  <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="./img/whatsapp.svg" alt="Icono WhatsApp"></a>
-                </div>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/excursiones.html">Excursiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/salidas.html">Salidas Grupales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/galeria.html">Imágenes y Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li style="height: 50px;"></li>
+            <li class="nav-item">
+              <p>Siguenos en Redes</p>
+              <div>
+                <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono"
+                    src="./img/facebook.svg" alt="Icono Facebook"></a>
+                <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img
+                    class="icono" src="./img/instagram.svg" alt="Icono Instagram"></a>
+                <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono"
+                    src="./img/whatsapp.svg" alt="Icono WhatsApp"></a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-    <nav class="nav-bg">
-      <ul class="navegacion">
-        <li class="list-item"><a href="./index.html">Inicio</a></li>
-        <li class="list-item"><a href="./pages/excursiones.html">Excursiones</a></li>
-        <li class="list-item"><a href="./pages/salidas.html">Salidas Grupales</a></li>
-        <li class="list-item"><a href="./pages/galeria.html">Imágenes y Video</a></li>
-        <li class="list-item"><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    
-    <!-- Titulo de Página -->
-    <div class="titulo__pagina">
-      <h1>Brujo Excursiones - Actividades</h1>
     </div>
-    
-    <!-- Slider -->
-    <div class="wrap">
-      <div class="lista-slider">
-          <label for="slide-1-trigger">Bosques</label>
-          <label for="slide-2-trigger">Cascadas</label>
-          <label for="slide-3-trigger">Ríos</label>
-          <label for="slide-4-trigger">Senderismo</label>
-          <label for="slide-5-trigger">Alpinismo</label>
-      </div>
-  
-      <input id="slide-1-trigger" type="radio" name="slides" checked>
-      <section class="slide slide-one">
-          <h2 class="texto-slider">Bosques</h2>
-          <h3 class="texto-frase-slider">“Necesitas una sensación de paz y relajación, camina por el bosque”</h3>
-          <h3 class="texto-frase-slider">Byron Pulsifer</h3>
-      </section>
-      <input id="slide-2-trigger" type="radio" name="slides">
-      <section class="slide slide-two">
-        <h2 class="texto-slider">Cascadas</h2>
-        <h3 class="texto-frase-slider">“No hay mejor lugar para encontrarse con uno mismo que sentarse junto a una cascada y escuchar su música.”</h3>
-        <h3 class="texto-frase-slider">Roland R Kemler</h3>
-      </section>
-      <input id="slide-3-trigger" type="radio" name="slides">
-      <section class="slide slide-three">
-        <h2 class="texto-slider">Rios</h2>
-        <h3 class="texto-frase-slider">“Un río atraviesa la roca no por su poder sino por su persistencia”</h3>
-        <h3 class="texto-frase-slider">Jim Watkins</h3>
-      </section>
-      <input id="slide-4-trigger" type="radio" name="slides">
-      <section class="slide slide-four">
-        <h2 class="texto-slider">Senderismo</h2>
-        <h3 class="texto-frase-slider">“Caminar por la naturaleza es presenciar mil milagros”</h3>
-          <h3 class="texto-frase-slider">Mary Davis</h3>
-      </section>
-      <input id="slide-5-trigger" type="radio" name="slides">
-      <section class="slide slide-five">
-        <h2 class="texto-slider">Alpinismo</h2>
-        <h3 class="texto-frase-slider">“Persigo la felicidad. Y la montaña responde a mi búsqueda"</h3>
-        <h3 class="texto-frase-slider">Chantal Maudit</h3>
-      </section>
-  
+  </nav>
+  <nav class="nav-bg">
+    <ul class="navegacion">
+      <li class="list-item"><a href="./index.html">Inicio</a></li>
+      <li class="list-item"><a href="./pages/excursiones.html">Excursiones</a></li>
+      <li class="list-item"><a href="./pages/salidas.html">Salidas Grupales</a></li>
+      <li class="list-item"><a href="./pages/galeria.html">Imágenes y Video</a></li>
+      <li class="list-item"><a href="./pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Titulo de Página -->
+  <div class="titulo__pagina">
+    <h1>Brujo Excursiones - Actividades</h1>
+  </div>
+
+  <!-- Slider -->
+  <div class="wrap">
+    <div class="lista-carrusel">
+      <label for="carrusel-1-trigger">Bosques</label>
+      <label for="carrusel-2-trigger">Cascadas</label>
+      <label for="carrusel-3-trigger">Ríos</label>
+      <label for="carrusel-4-trigger">Senderismo</label>
+      <label for="carrusel-5-trigger">Alpinismo</label>
+    </div>
+
+    <input id="carrusel-1-trigger" type="radio" name="slides" checked>
+    <section class="carrusel carrusel-one">
+      <h2 class="texto-carrusel">Bosques</h2>
+      <h3 class="texto-frase-carrusel">“Necesitas una sensación de paz y relajación, camina por el bosque”</h3>
+      <h3 class="texto-frase-carrusel">Byron Pulsifer</h3>
+    </section>
+    <input id="carrusel-2-trigger" type="radio" name="slides">
+    <section class="carrusel carrusel-two">
+      <h2 class="texto-carrusel">Cascadas</h2>
+      <h3 class="texto-frase-carrusel">“No hay mejor lugar para encontrarse con uno mismo que sentarse junto a una
+        cascada y escuchar su música.”</h3>
+      <h3 class="texto-frase-carrusel">Roland R Kemler</h3>
+    </section>
+    <input id="carrusel-3-trigger" type="radio" name="slides">
+    <section class="carrusel carrusel-three">
+      <h2 class="texto-carrusel">Rios</h2>
+      <h3 class="texto-frase-carrusel">“Un río atraviesa la roca no por su poder sino por su persistencia”</h3>
+      <h3 class="texto-frase-carrusel">Jim Watkins</h3>
+    </section>
+    <input id="carrusel-4-trigger" type="radio" name="slides">
+    <section class="carrusel carrusel-four">
+      <h2 class="texto-carrusel">Senderismo</h2>
+      <h3 class="texto-frase-carrusel">“Caminar por la naturaleza es presenciar mil milagros”</h3>
+      <h3 class="texto-frase-carrusel">Mary Davis</h3>
+    </section>
+    <input id="carrusel-5-trigger" type="radio" name="slides">
+    <section class="carrusel carrusel-five">
+      <h2 class="texto-carrusel">Alpinismo</h2>
+      <h3 class="texto-frase-carrusel">“Persigo la felicidad. Y la montaña responde a mi búsqueda"</h3>
+      <h3 class="texto-frase-carrusel">Chantal Maudit</h3>
+    </section>
+
   </div>
   <!-- Fin Slider -->
-    
-    <main>
-      <!-- Presentación San Francisco -->
-      <div class="presentacion__sanfrancisco">
-          <div class="contenedor__imagen__principal">
-            <img class="imagen imagen-separacion"
-            src="./img/sanfrancisco.jpg" alt="Paisaje San Francisco del Monte de Oro">
-          </div>
-          <div class="texto">
-            <h2 class="texto__titulo">San Francisco del Monte de Oro</h2>
-            <p class="texto__detalle">San Francisco del Monte de Oro se extiende en la zona norte de la provincia de San Luis, es el municipio cabecera del departamento Ayacucho y, cada año, conquista a múltiples visitantes de distintas procedencias.</p>
-            <p class="texto__detalle">Está emplazado en un valle, al pie de las sierras de Michilingüe, con una altitud media de 796 msnm, entre frutales que dominan sus alrededores, molles, algarrobos y palmeras caranday.</p>
-            <p class="texto__detalle">Nacido en medio de un valle, surcado por ríos, y rodeado por las Sierras Centrales y las de Socoscora, este poblado cautivante invita a ser protagonista de aventuradas actividades en escenarios de inimaginable hermosura.</p>
-          </div>
+
+  <main>
+    <!-- Presentación San Francisco -->
+    <div class="presentacion__sanfrancisco">
+      <div class="contenedor__imagen__principal">
+        <img class="imagen imagen-separacion" src="./img/sanfrancisco.jpg" alt="Paisaje San Francisco del Monte de Oro">
       </div>
-      
-      <!-- Pequeña galeria -->
-      <div class="pequeña__galeria">
+      <div class="texto">
+        <h2 class="texto__titulo">San Francisco del Monte de Oro</h2>
+        <p class="texto__detalle">San Francisco del Monte de Oro se extiende en la zona norte de la provincia de San
+          Luis, es el municipio cabecera del departamento Ayacucho y, cada año, conquista a múltiples visitantes de
+          distintas procedencias.</p>
+        <p class="texto__detalle">Está emplazado en un valle, al pie de las sierras de Michilingüe, con una altitud
+          media de 796 msnm, entre frutales que dominan sus alrededores, molles, algarrobos y palmeras caranday.</p>
+        <p class="texto__detalle">Nacido en medio de un valle, surcado por ríos, y rodeado por las Sierras Centrales y
+          las de Socoscora, este poblado cautivante invita a ser protagonista de aventuradas actividades en escenarios
+          de inimaginable hermosura.</p>
+      </div>
+    </div>
+
+    <!-- Pequeña galeria -->
+    <div class="pequeña__galeria">
+      <div class="move">
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria1.jpeg" alt="Rio seco colinas de San Francisco">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria2.jpeg" alt="Rio Goméz">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria3.jpeg" alt="Río de bajo caudal por sequia">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria4.jpeg" alt="Laderas empedradas">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria5.jpg" alt="Avistaje de Condor">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria6.jpg" alt="Cumbres rocosas laderas de colinas">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria7.jpg" alt="Desprendimiento rocoso">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria8.jpg" alt="Vista del valle desde la cima de las colinas">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria9.jpg" alt="Contraste de vegetación y colinas empedradas">
+        </div>
+        <div class="box">
           <img class="imagen pequeña" src="./img/galeria10.jpeg" alt="Avistaje de Condor">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria1.jpeg" alt="Rio seco colinas de San Francisco">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria2.jpeg" alt="Rio Goméz">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria3.jpeg" alt="Río de bajo caudal por sequia">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria4.jpeg" alt="Laderas empedradas">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria5.jpg" alt="Avistaje de Condor">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria6.jpg" alt="Cumbres rocosas laderas de colinas">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria7.jpg" alt="Desprendimiento rocoso">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria8.jpg" alt="Vista del valle desde la cima de las colinas">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria9.jpg" alt="Contraste de vegetación y colinas empedradas">
+        </div>
+        <div class="box">
+          <img class="imagen pequeña" src="./img/galeria10.jpeg" alt="Avistaje de Condor">
+        </div>
       </div>
+    </div>
 
-      <!-- Ubicación -->
-      <div class="presentacion__ubicacion">
-        <div class="texto__ubicacion">
-          <h2 class="texto__titulo">Ubicación</h2>
-          <p class="texto__detalle">San Francisco del Monte de Oro es el municipio cabecera del Departamento de Ayacucho, en la provincia de San Luis, Argentina.</p>
-          <p class="texto__detalle">Se encuentra a tan solo 113 Km al norte de la capital provincial. Para llegar debemos empalmar sobre la ruta 7, la ruta 147 y luego desviarnos a la derecha por la ruta 146 hasta el ingreso al pueblo, atravesando el paraje Toro Negro y el homenaje a Manuel Belgrano en ingreso a la localidad de Gral. Roca.</p>
-          <p class="texto__detalle">También se puede acceder por la ruta 9 recorriendo el impresionante Circuito Serrano visitando Potrero de los Funes, El Trapiche, La Carolina e ingresando por el vertiginoso y zigzagueante descenso al Valle de Chutunzo desde una altitud de 1800 mts. y culminando a 900 mts.</p>
-          <p class="texto__detalle">Ubicación: 32°36'00'' S  66°07'60'' O</p>
-          <p class="texto__detalle">Altitud: 796 msnm</p>
-        </div>  
-        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19012.937135917753!2d-66.12664015056535!3d-32.60500565667035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4915b0c038ccf%3A0x77793f104b8e5953!2sSan%20Francisco%20del%20Monte%20de%20Oro%2C%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1658411220774!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Ubicación -->
+    <div class="presentacion__ubicacion">
+      <div class="texto__ubicacion">
+        <h2 class="texto__titulo">Ubicación</h2>
+        <p class="texto__detalle">San Francisco del Monte de Oro es el municipio cabecera del Departamento de Ayacucho,
+          en la provincia de San Luis, Argentina.</p>
+        <p class="texto__detalle">Se encuentra a tan solo 113 Km al norte de la capital provincial. Para llegar debemos
+          empalmar sobre la ruta 7, la ruta 147 y luego desviarnos a la derecha por la ruta 146 hasta el ingreso al
+          pueblo, atravesando el paraje Toro Negro y el homenaje a Manuel Belgrano en ingreso a la localidad de Gral.
+          Roca.</p>
+        <p class="texto__detalle">También se puede acceder por la ruta 9 recorriendo el impresionante Circuito Serrano
+          visitando Potrero de los Funes, El Trapiche, La Carolina e ingresando por el vertiginoso y zigzagueante
+          descenso al Valle de Chutunzo desde una altitud de 1800 mts. y culminando a 900 mts.</p>
+        <p class="texto__detalle">Ubicación: 32°36'00'' S 66°07'60'' O</p>
+        <p class="texto__detalle">Altitud: 796 msnm</p>
       </div>
-    </main>
+      <iframe class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19012.937135917753!2d-66.12664015056535!3d-32.60500565667035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4915b0c038ccf%3A0x77793f104b8e5953!2sSan%20Francisco%20del%20Monte%20de%20Oro%2C%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1658411220774!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <div class="pie">
-        <div class="pie__redes">
-            <p>Siguenos en Redes</p>
-            <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="./img/facebook.svg" alt="Icono Facebook"></a>
-            <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="./img/instagram.svg" alt="Icono Instagram"></a>
-            <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="./img/whatsapp.svg" alt="Icono WhatsApp"></a>
-        </div>
-        <div class="pie__derechos">
-            <p>Brujo Excursiones - Todos los derechos reservados - 2022</p>
-        </div>
-        <div class="pie__domicilio">
-            <p>Calle XXXX Altura 123</p>
-            <p>Te: 1234-567890</p>
-            <p>mail@mail.com</p>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <div class="pie">
+      <div class="pie__redes">
+        <p>Siguenos en Redes</p>
+        <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono"
+            src="./img/facebook.svg" alt="Icono Facebook"></a>
+        <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img
+            class="icono" src="./img/instagram.svg" alt="Icono Instagram"></a>
+        <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono"
+            src="./img/whatsapp.svg" alt="Icono WhatsApp"></a>
       </div>
-      
-    </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
+      <div class="pie__derechos">
+        <p>Brujo Excursiones - Todos los derechos reservados - 2022</p>
+      </div>
+      <div class="pie__domicilio">
+        <p>Calle XXXX Altura 123</p>
+        <p>Te: 1234-567890</p>
+        <p>mail@mail.com</p>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

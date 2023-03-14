@@ -311,7 +311,7 @@ template {
 .boton, .formulario-btn, .list-item {
   border: 1px solid #000;
   border-radius: 8px;
-  box-shadow: -3px 3px rgb(17, 17, 17);
+  box-shadow: -3px 3px #000000;
   text-align: center;
   text-transform: uppercase;
   color: #000;
@@ -353,7 +353,7 @@ body {
 }
 
 /* Slider */
-.texto-slider {
+.texto-carrusel {
   color: #fff;
   font-size: 6vw;
   line-height: 1.2;
@@ -362,13 +362,13 @@ body {
   text-align: start;
 }
 
-.texto-frase-slider {
+.texto-frase-carrusel {
   text-align: end;
   text-shadow: 1px 1px 1px #333;
 }
 
 @media (min-width: 67.1875em) {
-  .texto-slider {
+  .texto-carrusel {
     font-size: 4em;
   }
 }
@@ -390,7 +390,7 @@ body {
   text-align: center;
 }
 
-.lista-slider {
+.lista-carrusel {
   background: #3E474F;
   box-shadow: 0 0.5em 1em #111;
   position: absolute;
@@ -400,7 +400,7 @@ body {
   width: 100%;
   font-size: small;
 }
-.lista-slider label {
+.lista-carrusel label {
   color: #788188;
   cursor: pointer;
   display: inline-block;
@@ -409,11 +409,11 @@ body {
   font-weight: bold;
   padding: 0 1em;
 }
-.lista-slider:hover {
+.lista-carrusel:hover {
   background: #2e353b;
 }
 
-.slide {
+.carrusel {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -427,35 +427,304 @@ body {
   transition: left 0s 0.75s;
 }
 
-.slide-one {
+/********* Index ****************************/
+.carrusel-one {
   background-image: url("../img/bosques-slider.jpg");
 }
 
-.slide-two {
+.carrusel-two {
   background-image: url("../img/cascada-slider.jpg");
 }
 
-.slide-three {
+.carrusel-three {
   background-image: url("../img/rios-slider.jpeg");
 }
 
-.slide-four {
+.carrusel-four {
   background-image: url("../img/senderismo-slider.jpeg");
 }
 
-.slide-five {
+.carrusel-five {
   background-image: url("../img/alpinismo-slider.jpg");
 }
 
-[id^=slide]:checked + .slide {
+[id^=carrusel]:checked + .carrusel {
   left: 0;
   z-index: 100;
   transition: left 0.65s ease-out;
 }
-[id^=slide]:checked + .slide h1 {
+[id^=carrusel]:checked + .carrusel h1 {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.5s 0.5s;
+}
+
+/************* Slider Excursiones ****************/
+.container {
+  margin: auto;
+}
+
+.slider, .slider-item, .menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.slider {
+  position: relative;
+  width: 95%;
+  height: 95%;
+}
+
+ul.slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+
+ul.slider li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+  opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu {
+  text-align: center;
+  margin: 2rem;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: grey;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 100%;
+}
+
+/********/
+.slide, .slide2, .slide3,
+.slide4, .slide5, .slide6,
+.slide7, .slide8, .slider9 {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin: 2rem;
+  height: calc(300px + 20em);
+  border-radius: 8px;
+}
+
+.slide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(300px + 20em);
+  border-radius: 8px;
+}
+
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.05s ease-out;
+  transition: opacity 0.05s ease-out;
+  border-radius: 8px;
+}
+
+.slide-item img {
+  display: block;
+  height: calc(300px + 20em);
+  max-width: 100%;
+}
+
+.slide-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.slide-control.prev {
+  left: 2%;
+}
+
+.slide-control.next {
+  right: 2%;
+}
+
+.slide-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#slideLosPuestos-1:checked ~ .control-1,
+#slideLosPuestos-2:checked ~ .control-2,
+#slideLosPuestos-3:checked ~ .control-3,
+#slideLosPuestos-4:checked ~ .control-4,
+#slideLosPuestos-5:checked ~ .control-5,
+#slideLosPuestos-6:checked ~ .control-6,
+#slideLosPuestos-7:checked ~ .control-7,
+#slideCondor-1:checked ~ .control-1,
+#slideCondor-2:checked ~ .control-2,
+#slideCondor-3:checked ~ .control-3,
+#slideCondor-4:checked ~ .control-4,
+#slideCondor-5:checked ~ .control-5,
+#slideCondor-6:checked ~ .control-6,
+#slideCondor-7:checked ~ .control-7,
+#slideSalto-1:checked ~ .control-1,
+#slideSalto-2:checked ~ .control-2,
+#slideSalto-3:checked ~ .control-3,
+#slideSalto-4:checked ~ .control-4,
+#slideSalto-5:checked ~ .control-5,
+#slideSalto-6:checked ~ .control-6,
+#slideIndio-1:checked ~ .control-1,
+#slideIndio-2:checked ~ .control-2,
+#slideIndio-3:checked ~ .control-3,
+#slideIndio-4:checked ~ .control-4,
+#slideIndio-5:checked ~ .control-5,
+#slidePalmar-1:checked ~ .control-1,
+#slidePalmar-2:checked ~ .control-2,
+#slidePalmar-3:checked ~ .control-3,
+#slidePalmar-4:checked ~ .control-4,
+#slidePalmar-5:checked ~ .control-5,
+#slideGomez-1:checked ~ .control-1,
+#slideGomez-2:checked ~ .control-2,
+#slideGomez-3:checked ~ .control-3,
+#slideGomez-4:checked ~ .control-4,
+#slideHondo-1:checked ~ .control-1,
+#slideHondo-2:checked ~ .control-2,
+#slideHondo-3:checked ~ .control-3,
+#slideHondo-4:checked ~ .control-4,
+#slideHondo-5:checked ~ .control-5,
+#slideCumbre-1:checked ~ .control-1,
+#slideCumbre-2:checked ~ .control-2,
+#slideCumbre-3:checked ~ .control-3,
+#slideCumbre-4:checked ~ .control-4,
+#slideCumbre-5:checked ~ .control-5,
+#slideCumbre-6:checked ~ .control-6 {
+  display: block;
+}
+
+.slide-indicador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-indicador li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slide-circulo {
+  color: #fafafa;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slide-circulo:hover {
+  color: #006400;
+}
+
+#slideLosPuestos-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideLosPuestos-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideLosPuestos-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideLosPuestos-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideLosPuestos-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slideLosPuestos-6:checked ~ .control-6 ~ .slide-indicador li:nth-child(6) .slide-circulo,
+#slideLosPuestos-7:checked ~ .control-7 ~ .slide-indicador li:nth-child(7) .slide-circulo,
+#slideCondor-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideCondor-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideCondor-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideCondor-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideCondor-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slideCondor-6:checked ~ .control-6 ~ .slide-indicador li:nth-child(6) .slide-circulo,
+#slideCondor-7:checked ~ .control-7 ~ .slide-indicador li:nth-child(7) .slide-circulo,
+#slideSalto-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideSalto-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideSalto-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideSalto-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideSalto-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slideSalto-6:checked ~ .control-6 ~ .slide-indicador li:nth-child(6) .slide-circulo,
+#slideIndio-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideIndio-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideIndio-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideIndio-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideIndio-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slidePalmar-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slidePalmar-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slidePalmar-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slidePalmar-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slidePalmar-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slideGomez-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideGomez-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideGomez-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideGomez-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideHondo-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideHondo-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideHondo-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideHondo-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideHondo-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slideCumbre-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slideCumbre-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slideCumbre-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slideCumbre-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slideCumbre-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slideCumbre-6:checked ~ .control-6 ~ .slide-indicador li:nth-child(6) .slide-circulo {
+  color: #556B2F;
+}
+
+#titulo {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: #fafafa;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
 /* Barra de navegación */
@@ -482,7 +751,7 @@ body {
   font-weight: 700;
 }
 .navegacion a:hover {
-  color: rgb(17, 17, 17);
+  color: #000000;
 }
 
 .navegacion-chica {
@@ -502,8 +771,8 @@ body {
   transition: all 0.25s linear;
 }
 .list-item:hover {
-  box-shadow: -6px 6px rgb(17, 17, 17);
-  color: rgb(17, 17, 17);
+  box-shadow: -6px 6px #000000;
+  color: #000000;
   transform: translate(0.4em, -0.4em);
 }
 
@@ -642,28 +911,133 @@ footer {
   }
 }
 /************************************************************
-   Index 
+   Index
    ***********************************************************/
 .presentacion__sanfrancisco,
-.presentacion__ubicacion,
-.detalle__excursion,
-.detalle__excursion--reverse {
+.presentacion__ubicacion {
   display: flex;
   flex-direction: row;
   gap: 3rem;
   margin: 2rem;
   justify-content: space-around;
+  align-items: center;
 }
 
-.detalle__excursion,
-.detalle__excursion--reverse {
-  justify-content: flex-start;
+/************************************************************
+   Excursiones
+   ***********************************************************/
+.excursiones {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.detalle__excursion--reverse {
-  flex-direction: row-reverse;
+.excursiones__LosPuestos {
+  grid-area: 1/1/2/3;
 }
 
+.texto__LosPuestos {
+  grid-area: 1/3/2/6;
+}
+
+.excursiones__Condor {
+  grid-area: 2/4/3/6;
+}
+
+.texto__Condor {
+  grid-area: 2/1/3/4;
+}
+
+.excursiones__Salto {
+  grid-area: 3/1/4/3;
+}
+
+.texto__Salto {
+  grid-area: 3/3/4/6;
+}
+
+.excursiones__Indio {
+  grid-area: 4/4/5/6;
+}
+
+.texto__Indio {
+  grid-area: 4/1/5/4;
+}
+
+.excursiones__Palmar {
+  grid-area: 5/1/6/3;
+}
+
+.texto__Palmar {
+  grid-area: 5/3/6/6;
+}
+
+.excursiones__Gomez {
+  grid-area: 6/4/7/6;
+}
+
+.texto__Gomez {
+  grid-area: 6/1/7/4;
+}
+
+.excursiones__Hondo {
+  grid-area: 7/1/8/3;
+}
+
+.texto__Hondo {
+  grid-area: 7/3/8/6;
+}
+
+.excursiones__Cumbre {
+  grid-area: 8/4/9/6;
+}
+
+.texto__Cumbre {
+  grid-area: 8/1/9/4;
+}
+
+.excursiones__Carancho {
+  grid-area: 9/1/10/3;
+}
+
+.texto__Carancho {
+  grid-area: 9/3/10/6;
+}
+
+@media (max-width: 1200px) {
+  .excursiones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem 2rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .slide-item img,
+.slide-inner, .slide, .slide2, .slide3, .slide4,
+.slide5, .slide6, .slide7, .slide8, .slider9 {
+    height: calc(200px + 20em);
+  }
+  .excursiones__LosPuestos, .excursiones__Condor,
+.excursiones__Salto, .excursiones__Indio,
+.excursiones__Palmar, .excursiones__Gomez,
+.excursiones__Hondo, .excursiones__Cumbre,
+.excursiones__Carancho {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .slide-item img,
+.slide-inner, .slide, .slide2, .slide3, .slide4,
+.slide5, .slide6, .slide7, .slide8, .slider9 {
+    height: calc(150px + 20em);
+  }
+}
 .imagen__excursion {
   width: 45rem;
   height: 30rem;
@@ -675,8 +1049,8 @@ footer {
   }
 }
 @media (max-width: 992px) {
-  .detalle__excursion,
-.detalle__excursion--reverse {
+  .contenedor__excursiones,
+.contenedor__excursiones--reverse {
     flex-direction: column;
     align-items: center;
     margin: 4rem 2rem 2rem 2rem;
@@ -701,38 +1075,45 @@ footer {
 }
 /* Galeria del Index */
 .pequeña__galeria {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  padding: 0;
-  justify-items: center;
+  background: linear-gradient(90deg, rgb(85, 123, 131) 0%, rgb(57, 174, 169) 40%, rgb(162, 213, 171) 70%, rgb(229, 239, 193) 100%);
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pequeña__galeria .move {
+  display: flex;
+  width: 30rem;
+  animation: animacion 40s linear infinite;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-350rem);
+  }
+}
+.pequeña__galeria .box {
+  height: 30rem;
+  width: 30rem;
 }
 
 .pequeña {
-  width: 20rem;
-  height: 20rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 0%;
 }
 
 /* Responsive para la galería del Index */
-@media (max-width: 1100px) {
-  .pequeña__galeria {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (max-width: 900px) {
-  .pequeña__galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 680px) {
-  .pequeña__galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 470px) {
+@media (max-width: 576px) {
   .pequeña {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
+  }
+  .pequeña__galeria {
+    height: 20rem;
   }
 }
 /* Titulos de textos, lo usamos en todas las páginas */
@@ -745,6 +1126,12 @@ footer {
 
 .texto__detalle {
   font-size: medium;
+}
+
+.texto__detalle__excursiones {
+  font-weight: bold;
+  font-size: medium;
+  text-decoration: underline;
 }
 
 /* Controlamos tamaño textos y mapa del index */
@@ -796,7 +1183,7 @@ footer {
 }
 
 .proxima__salida a:hover {
-  color: rgb(17, 17, 17);
+  color: #000000;
 }
 
 .contacto {
@@ -1051,7 +1438,7 @@ video {
 }
 .formulario-btn:hover {
   transition: all 0.25s linear;
-  box-shadow: -6px 6px rgb(17, 17, 17);
+  box-shadow: -6px 6px #000000;
   transform: translate(0.4em, -0.4em);
 }
 

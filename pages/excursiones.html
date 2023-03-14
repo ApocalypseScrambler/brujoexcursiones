@@ -1,215 +1,961 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excursiones - Brujo Excursiones</title>
-    <meta name="description" content="Excursiones disponibles en Brujo Excursiones. Turismo aventura, trekking, alpinismo y mas en San Francisco del Monte de Oro.">
- 
-    <meta name="keywords"
-    content="Excursiones, Turismo, San Luis, Aventura, Trekking, Alpinismo">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excursiones - Brujo Excursiones</title>
+  <meta name="description"
+    content="Excursiones disponibles en Brujo Excursiones. Turismo aventura, trekking, alpinismo y mas en San Francisco del Monte de Oro.">
 
-    <meta http-equiv="expires" content="3600"/>
+  <meta name="keywords" content="Excursiones, Turismo, San Luis, Aventura, Trekking, Alpinismo">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
-    
-    <!-- Hoja de estilos -->
-    <link rel="preload" href="../css/bootstrap.min.css" as="style">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="preload" href="../css/style.css" as="style">
-    <link rel="stylesheet" href="../css/style.css">
+  <meta http-equiv="expires" content="3600" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="preload" href="../css/bootstrap.min.css" as="style">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">  
-        <div class="encabezado">
+  <!-- Header -->
+  <header class="header">
+    <div class="encabezado">
+      <div class="logo__encabezado">
+        <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo Brujo Excursiones"></a>
+      </div>
+      <div class="titulo__principal">
+        <p class="titulo-brujo">Brujo Excursiones</p>
+      </div>
+      <div class="titulo__secundario">
+        <p class="titulo-detalle">Agencia de Tours Ecologicos - San Francisco del Monte de Oro - San Luis</p>
+      </div>
+    </div>
+
+  </header>
+  <!-- Barra de Navegación -->
+  <nav class="navegacion-chica navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menú</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header flex-column">
           <div class="logo__encabezado">
-            <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo Brujo Excursiones"></a>
-          </div>  
-          <div class="titulo__principal">
-            <p class="titulo-brujo">Brujo Excursiones</p>
+            <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg"
+                alt="Logo Brujo Excursiones"></a>
           </div>
-          <div class="titulo__secundario">
-            <p class="titulo-detalle">Agencia de Tours Ecologicos - San Francisco del Monte de Oro - San Luis</p>
-          </div>
-        </div>
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
 
-    </header>  
-    <!-- Barra de Navegación -->
-    <nav class="navegacion-chica navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menú</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          <div class="offcanvas-header flex-column">
-            <div class="logo__encabezado">
-              <a title="logo" href="../index.html"><img class="logo" src="../img/logo.jpg" alt="Logo Brujo Excursiones"></a>
-            </div>  
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Brujo Excursiones</h5>
-            
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./excursiones.html">Excursiones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./salidas.html">Salidas Grupales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./galeria.html">Imágenes y Video</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
-              </li>
-              <li style="height: 50px;"></li>
-              <li class="nav-item">
-                <p>Siguenos en Redes</p>
-                <div>
-                  <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="../img/facebook.svg" alt="Icono Facebook"></a>
-                  <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="../img/instagram.svg" alt="Icono Instagram"></a>
-                  <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="../img/whatsapp.svg" alt="Icono WhatsApp"></a>
-                </div>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./excursiones.html">Excursiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./salidas.html">Salidas Grupales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">Imágenes y Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li style="height: 50px;"></li>
+            <li class="nav-item">
+              <p>Siguenos en Redes</p>
+              <div>
+                <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono"
+                    src="../img/facebook.svg" alt="Icono Facebook"></a>
+                <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img
+                    class="icono" src="../img/instagram.svg" alt="Icono Instagram"></a>
+                <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono"
+                    src="../img/whatsapp.svg" alt="Icono WhatsApp"></a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-    <nav class="nav-bg">
-      <ul class="navegacion">
-        <li class="list-item"><a href="../index.html">Inicio</a></li>
-        <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
-        <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
-        <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
-        <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+    </div>
+  </nav>
+  <nav class="nav-bg">
+    <ul class="navegacion">
+      <li class="list-item"><a href="../index.html">Inicio</a></li>
+      <li class="list-item"><a href="./excursiones.html">Excursiones</a></li>
+      <li class="list-item"><a href="./salidas.html">Salidas Grupales</a></li>
+      <li class="list-item"><a href="./galeria.html">Imágenes y Video</a></li>
+      <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Excursiones -->
+  <div class="titulo__pagina">
+    <h1>Brujo Excursiones - Excursiones</h1>
+  </div>
+  <div class="excursiones">
+    <div class="excursiones__LosPuestos">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideLosPuestos-1" name="slide" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos1.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideLosPuestos-2" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos2.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideLosPuestos-3" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideLosPuestos-4" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideLosPuestos-5" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos5.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideLosPuestos-6" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos6.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideLosPuestos-7" name="slide" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/LosPuestos7.jpg">
+          </div>
+          <label for="slideLosPuestos-1" class="slide-control next control-7">›</label>
+          <label for="slideLosPuestos-6" class="slide-control prev control-7">‹</label>
+          <label for="slideLosPuestos-7" class="slide-control next control-6">›</label>
+          <label for="slideLosPuestos-5" class="slide-control prev control-6">‹</label>
+          <label for="slideLosPuestos-6" class="slide-control next control-5">›</label>
+          <label for="slideLosPuestos-4" class="slide-control prev control-5">‹</label>
+          <label for="slideLosPuestos-5" class="slide-control next control-4">›</label>
+          <label for="slideLosPuestos-3" class="slide-control prev control-4">‹</label>
+          <label for="slideLosPuestos-4" class="slide-control next control-3">›</label>
+          <label for="slideLosPuestos-2" class="slide-control prev control-3">‹</label>
+          <label for="slideLosPuestos-1" class="slide-control prev control-2">‹</label>
+          <label for="slideLosPuestos-3" class="slide-control next control-2">›</label>
+          <label for="slideLosPuestos-7" class="slide-control prev control-1">‹</label>
+          <label for="slideLosPuestos-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideLosPuestos-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideLosPuestos-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideLosPuestos-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideLosPuestos-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideLosPuestos-5" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideLosPuestos-6" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideLosPuestos-7" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="texto__LosPuestos">
+      <h2 class="texto__titulo">Trekking Los Puestos</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Es una caminata por senderos que nos llevan hacia la cumbre, donde podremos visitar y
+        conocer antiguos puestos y disfrutar de la biodiversidad y belleza natural que ofrecen las sierras de San
+        Francisco</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda *</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
       </ul>
-    </nav>
-    
-    <!-- Excursiones -->
-    <div class="titulo__pagina">
-        <h1>Brujo Excursiones - Excursiones</h1>
+      * Obligatorio
+      <br>
+      ** (Recomendamos pantalón largo para el ascenso y una muda extra de medias y camiseta)
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: BAJA</li>
+        <li>Dificultad Física: MEDIA</li>
+      </ul>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Es una experiencia que comienza bien temprano por la mañana, son 4hs de ascenso
+        aproximadamente (depende de las condiciones fisicas grupales) y se emprende el regreso a partir de las 16:30hs
+        para finalizar a las 19:00hs*.</p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
     </div>
 
-    <div class="excursiones">
-        <div class="detalle__excursion">
-          <div class="container-fluid d-flex justify-content-center">
-            <img class="imagen__excursion" src="../img/SaltoIndio.jpg" alt="Trekking Salto Escondido">
+
+    <div class="excursiones__Condor">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideCondor-1" name="slide2" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor1.jpg">
           </div>
-          <div class="texto">
-            <h2 class="texto__titulo">Trekking Salto Escondido</h2>
-            <p class="texto__detalle">Luego de un camino sinuoso de 10/12 km llegamos al punto de inicio de la excursión. Dejamos el vehículo y comenzamos el descenso por un sendero hacia el río Hondo, recibe ese nombre porque sus paredes llegan a más de 50 metros de altura. Una vez en el río seguimos su curso durante 2 horas aproximadamente cruzando el mismo en varias oportunidades. 
-            <br> 
-            Es un camino bastante exigente que incluye trepadas en piedras, troncos tirados con sogas y pasadas cuerpo a tierra por dentro de cuevas de piedra.
-            <br>
-            Después del esfuerzo, la recompensa es grata, un salto de 70 mts. y una olla que se estima que tiene una profundidad mayor a 5 metros. La excursión requiere un buen estado físico. Puede ser complicada para personas mayores o con un sobrepeso marcado.
-            <br>
-            Duración aproximada: 3-4 horas
-            <br>
-            Dificultad: Alta</p>
+          <input class="slide-open" type="radio" id="slideCondor-2" name="slide2" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor2.jpg">
           </div>
+          <input class="slide-open" type="radio" id="slideCondor-3" name="slide2" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCondor-4" name="slide2" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCondor-5" name="slide2" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor5.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCondor-6" name="slide2" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor6.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCondor-7" name="slide2" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelCondor7.jpg">
+          </div>
+          <label for="slideCondor-1" class="slide-control next control-7">›</label>
+          <label for="slideCondor-6" class="slide-control prev control-7">‹</label>
+          <label for="slideCondor-7" class="slide-control next control-6">›</label>
+          <label for="slideCondor-5" class="slide-control prev control-6">‹</label>
+          <label for="slideCondor-6" class="slide-control next control-5">›</label>
+          <label for="slideCondor-4" class="slide-control prev control-5">‹</label>
+          <label for="slideCondor-5" class="slide-control next control-4">›</label>
+          <label for="slideCondor-3" class="slide-control prev control-4">‹</label>
+          <label for="slideCondor-4" class="slide-control next control-3">›</label>
+          <label for="slideCondor-2" class="slide-control prev control-3">‹</label>
+          <label for="slideCondor-1" class="slide-control prev control-2">‹</label>
+          <label for="slideCondor-3" class="slide-control next control-2">›</label>
+          <label for="slideCondor-7" class="slide-control prev control-1">‹</label>
+          <label for="slideCondor-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideCondor-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCondor-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCondor-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCondor-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCondor-5" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCondor-6" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCondor-7" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
       </div>
-
-        <div class="detalle__excursion--reverse">
-          <div class="container-fluid d-flex justify-content-center">  
-            <img class="imagen__excursion" src="../img/SenderismoMontania.jpg" alt="Senderismo de Montaña">
-          </div>
-          <div class="texto">
-            <h2 class="texto__titulo">Senderismo de Montaña</h2>
-            <p class="texto__detalle">Contamos con varios senderos de diversas dificultades adaptados a las necesidades de los turistas. Los recorridos varían desde 5 Km hasta los 25 Km por caminos de senderos marcados o de empedrado que puede incluir trepadas.
-            <br>
-            A través de estos senderos se puede observar la vegetación autóctona, aves y animales de la región.
-            También se puede observar cascadas, ríos y más.
-            <br>
-            Duración aproximada: entre 1-2 horas a 3-5 horas
-            <br>
-            Dificultad: Baja a Alta</p>
-            </p>
-          </div>
-        </div>
-
-        <div class="detalle__excursion">
-          <div class="container-fluid d-flex justify-content-center">
-            <img class="imagen__excursion" src="../img/Condor.jpg" alt="Trekking Paso del Condor">
-          </div>
-          <div class="texto">
-            <h2 class="texto__titulo">Trekking Paso del Condor</h2>
-            <p class="texto__detalle">Recorremos una distancia de 3 Km a través de un sendero marcado y de fácil acceso para luego sumergirnos en plena vegetación donde seguiremos por otros 5 Km. Luego comenzaremos el ascenso por la ladera de la montaña otros 5 Km.
-            <br>
-            Al llegar a la cima tendremos una excelente vista de los valles circundantes y a su ve podremos apreciar los cóndores en pleno vuelo.
-            <br>
-            Duración aproximada: 3-5 horas
-            <br>
-            Dificultad: Media</p>
-            </p>
-          </div>
-        </div>
-
-        <div class="detalle__excursion--reverse">
-          <div class="container-fluid d-flex justify-content-center">  
-            <img class="imagen__excursion" src="../img/Alpinismo.jpg" alt="Alpinismo">
-          </div>
-          <div class="texto">
-            <h2 class="texto__titulo">Alpinismo</h2>
-            <p class="texto__detalle">Excursión programada y con cupo, por favor consúltanos para más detalle.
-            <br>
-            Con equipo de seguridad ascenderemos para luego realizar el descenso, por la ladera de alguno de los picos importantes como el Monte Gómez, Quebrada de López, u otros según disponibilidad y dificultad.
-            <br>
-            Duración aproximada: 2-4 horas
-            <br>
-            Dificultad: Media-Alta</p>
-          </div>
-        </div>
-
-        <div class="detalle__excursion">
-          <div class="container-fluid d-flex justify-content-center">   
-            <img class="imagen__excursion" src="../img/Campamento.jpg" alt="Campamentos">
-          </div>
-          <div class="texto">
-            <h2 class="texto__titulo">Campamentos</h2>
-            <p class="texto__detalle">Si te gusta la aventura, esta es tu opción ideal. Imagina estar en plena montaña con solo la Luna y las estrellas por techo, una fogata y el sonido de la naturaleza a tu alrededor.
-            <br>
-            Esta excursión incluye un senderismo corto de 4 Km hasta el campamento base, carpa y bolsa para dormir y cena con bebida incluida.
-            <br>
-            Duración aproximada: 12 horas aproximadamente.
-            <br>
-            Dificultad: Baja</p>
-          </div>
-        </div>
     </div>
-    <!-- Fin Excursiones -->
 
-    <!-- Footer -->
-    <footer>
-        <div class="pie">
-          <div class="pie__redes">
-            <p>Siguenos en Redes</p>
-            <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono" src="../img/facebook.svg" alt="Icono Facebook"></a>
-            <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img class="icono" src="../img/instagram.svg" alt="Icono Instagram"></a>
-            <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono" src="../img/whatsapp.svg" alt="Icono WhatsApp"></a>
+    <div class="texto__Condor">
+      <h2 class="texto__titulo">Trekking Paso del Condor</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Es una caminata que nos lleva hasta uno de los puntos más altos en la Quebrada de Rio
+        Gomez, donde podemos disfrutar de un punto panorámico bellisimo. La excursión implica un ascenso que se
+        realiza
+        por sendas bien marcadas hasta un antiguo puesto minero, donde se realiza un descanso. Continuamos la caminata
+        por el lomo de la quebrada para finalmente bajar hasta el rio Gomez y disfrutar de sus cálidas aguas.</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda *</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br>
+      ** (Recomendamos pantalón largo para el ascenso y una muda extra de medias y camiseta)
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: BAJA</li>
+        <li>Dificultad Física: MEDIA</li>
+      </ul>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Es una experiencia que comienza por la mañana temprano (7am). Es necesario ser puntual
+        ya que la excursión implica un ascenso de 3 horas mínimo hasta llegar al primer descanso (puesto minero
+        abandonado). Luego continuamos el recorrido por el Lomo de la quebrada para regresar a partir de las 14hs.*
+      </p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+    <div class="excursiones__Salto">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideSalto-1" name="slide3" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/SaltoEscondido1.jpg">
           </div>
-          <div class="pie__derechos">
-              <p>Brujo Excursiones - Todos los derechos reservados - 2022</p>
+          <input class="slide-open" type="radio" id="slideSalto-2" name="slide3" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/SaltoEscondido2.jpg">
           </div>
-          <div class="pie__domicilio">
-              <p>Calle XXXX Altura 123</p>
-              <p>Te: 1234-567890</p>
-              <p>mail@mail.com</p>
+          <input class="slide-open" type="radio" id="slideSalto-3" name="slide3" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/SaltoEscondido3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideSalto-4" name="slide3" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/SaltoEscondido4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideSalto-5" name="slide3" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/SaltoEscondido5.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideSalto-6" name="slide3" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/SaltoEscondido6.jpg">
+          </div>
+          <label for="slideSalto-1" class="slide-control next control-6">›</label>
+          <label for="slideSalto-5" class="slide-control prev control-6">‹</label>
+          <label for="slideSalto-6" class="slide-control next control-5">›</label>
+          <label for="slideSalto-4" class="slide-control prev control-5">‹</label>
+          <label for="slideSalto-5" class="slide-control next control-4">›</label>
+          <label for="slideSalto-3" class="slide-control prev control-4">‹</label>
+          <label for="slideSalto-4" class="slide-control next control-3">›</label>
+          <label for="slideSalto-2" class="slide-control prev control-3">‹</label>
+          <label for="slideSalto-1" class="slide-control prev control-2">‹</label>
+          <label for="slideSalto-3" class="slide-control next control-2">›</label>
+          <label for="slideSalto-6" class="slide-control prev control-1">‹</label>
+          <label for="slideSalto-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideSalto-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideSalto-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideSalto-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideSalto-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideSalto-5" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideSalto-6" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto__Salto">
+      <h2 class="texto__titulo">Excursión Salto Escondido</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">El Salto Escondido es conocido por su impactante belleza, con más de 70 mts es una de
+        las caídas de agua más emblemáticas de la provincia. Es una caminata faldeando una quebrada que nos lleva hacia
+        el río, donde a través de sendas naturales podemos disfrutar de una intensa experiencia. El trekking está
+        categorizado de dificultad intermedia. El recorrido propone un desafío considerable, en el cuál deben superarse
+        varios obstáculos para llegar al lugar. Caminar por sendas agrestes, hacer equilbrio sobre rocas, realizar
+        trepadas y cruzar el río, son varias de las destrezas que el participante deberá realizar. Es un desafío para
+        todos los amantes del trekking aventura.</p>
+      Ésta excursión "NO" es recomendable para menores de 14 años, ni para personas con hábitos sedentarios
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda * **</li>
+        <li>Calzado deportivo de suela gruesa, cómodo, resistente y de buen grip *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (1,5 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br>
+      ** Se recomienda pantalón largo, el lugar es agreste y las sendas son naturales con "vegetación espinosa"
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: ALTA</li>
+        <li>Dificultad Física: MEDIA</li>
+      </ul>
+      - Es un trekking de equilibrio, en el cuál se debe: cruzar el río en varias oportunidades, realizar pequeñas
+      trepadas, caminar sobre rocas, caminar por "zonas peligrosas"
+      <br><br>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <ul class="texto__detalle">
+        <li>Encuentro y charla previa 8 am * </li>
+        <li>Iniciamos el recorrido 8:10 am *</li>
+        <li>Terminamos la experiencia a 5:00 pm *</li>
+      </ul>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+
+    <div class="excursiones__Indio">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideIndio-1" name="slide4" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelIndio1.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideIndio-2" name="slide4" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelIndio2.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideIndio-3" name="slide4" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelIndio3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideIndio-4" name="slide4" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelIndio4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideIndio-5" name="slide4" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/PasoDelIndio5.jpg">
+          </div>
+
+          <label for="slideIndio-1" class="slide-control next control-5">›</label>
+          <label for="slideIndio-4" class="slide-control prev control-5">‹</label>
+          <label for="slideIndio-5" class="slide-control next control-4">›</label>
+          <label for="slideIndio-3" class="slide-control prev control-4">‹</label>
+          <label for="slideIndio-4" class="slide-control next control-3">›</label>
+          <label for="slideIndio-2" class="slide-control prev control-3">‹</label>
+          <label for="slideIndio-1" class="slide-control prev control-2">‹</label>
+          <label for="slideIndio-3" class="slide-control next control-2">›</label>
+          <label for="slideIndio-5" class="slide-control prev control-1">‹</label>
+          <label for="slideIndio-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideIndio-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideIndio-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideIndio-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideIndio-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideIndio-5" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto__Indio">
+      <h2 class="texto__titulo">Trekking Salto del Indio</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Ésta experiencia propone varios desafíos a lo largo de su recorrido. Es un viaje al
+        corazón de la quebrada, en el que la naturaleza nos pone a prueba y nos invita a descubrir maravillosos lugares
+        dónde podremos disfrutar de hermosos paisajes y conocer la biodiversidad del lugar.
+        La salida implica caminar por sendas agrestes, cruzar el río en varias oportunidades y realizar pequeñas
+        trepadas.</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda * **</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: MEDIA/ALTA</li>
+        <li>Dificultad Física: MEDIA</li>
+      </ul>
+      <ul style="list-style-type: square;">
+        <li>Se debe marchar a través de monte nativo por sendas naturales y agrestes.</li>
+        <li>Se debe caminar sobre rocas y realizar destrezas de equilibrio y pequeñas trepadas</li>
+        <li>Durante la travesía cruzaremos el río en varias oportunidades</li>
+        <li>El circuito tiene un total de 10km</li>
+        <li>Para llegar al lugar, es necesario caminar 5 km durante más de 3 horas, los obstáculos a superar implican
+          realizar pequeñas trepadas y caminar por sendas con rocas sueltas.</li>
+      </ul>
+      <br>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <ul class="texto__detalle">
+        <li>Inicio 8:00 hs * </li>
+        <li>Regreso 19:00 hs *</li>
+      </ul>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+    <div class="excursiones__Palmar">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slidePalmar-1" name="slide5" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaElPalmar1.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slidePalmar-2" name="slide5" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaElPalmar2.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slidePalmar-3" name="slide5" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaElPalmar3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slidePalmar-4" name="slide5" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaElPalmar4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slidePalmar-5" name="slide5" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaElPalmar5.jpg">
+          </div>
+
+          <label for="slidePalmar-1" class="slide-control next control-5">›</label>
+          <label for="slidePalmar-4" class="slide-control prev control-5">‹</label>
+          <label for="slidePalmar-5" class="slide-control next control-4">›</label>
+          <label for="slidePalmar-3" class="slide-control prev control-4">‹</label>
+          <label for="slidePalmar-4" class="slide-control next control-3">›</label>
+          <label for="slidePalmar-2" class="slide-control prev control-3">‹</label>
+          <label for="slidePalmar-1" class="slide-control prev control-2">‹</label>
+          <label for="slidePalmar-3" class="slide-control next control-2">›</label>
+          <label for="slidePalmar-5" class="slide-control prev control-1">‹</label>
+          <label for="slidePalmar-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slidePalmar-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slidePalmar-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slidePalmar-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slidePalmar-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slidePalmar-5" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto__Palmar">
+      <h2 class="texto__titulo">Trekking Quebrada El Palmar</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Es una caminata apta para toda la familia que se desarrolla en un entorno natural, donde
+        visitaremos unas de las cascadas más bellas de San francisco.</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda * **</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br>
+      ** Recomendamos pantalón largo para el ascenso y una muda extra de medias y camiseta
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: BAJA</li>
+        <li>Dificultad Física: BAJA</li>
+      </ul>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Es una experiencia que comienza por la mañana, donde es necesario caminar durante 1 hora
+        y 30' (aprox) para llegar al sitio y luego se emprende el regreso a partir de las 14:00hs.</p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+    <div class="excursiones__Gomez">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideGomez-1" name="slide6" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaDeGomez1.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideGomez-2" name="slide6" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaDeGomez2.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideGomez-3" name="slide6" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaDeGomez3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideGomez-4" name="slide6" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/QuebradaDeGomez4.jpg">
+          </div>
+
+          <label for="slideGomez-1" class="slide-control next control-4">›</label>
+          <label for="slideGomez-3" class="slide-control prev control-4">‹</label>
+          <label for="slideGomez-4" class="slide-control next control-3">›</label>
+          <label for="slideGomez-2" class="slide-control prev control-3">‹</label>
+          <label for="slideGomez-1" class="slide-control prev control-2">‹</label>
+          <label for="slideGomez-3" class="slide-control next control-2">›</label>
+          <label for="slideGomez-4" class="slide-control prev control-1">‹</label>
+          <label for="slideGomez-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideGomez-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideGomez-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideGomez-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideGomez-4" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto__Gomez">
+      <h2 class="texto__titulo">Trekking Quebrada de Goméz</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Éste es un trekking dónde podemos disfrutar de un hermoso paseo por la quebrada y
+        conocer la flora y fauna nativa. La caminata implica caminar por sendas a la orilla del río, cruzarlo en varias
+        oportunidades y realizar pequeñas trepadas de baja dificultad.
+        Un sitio maravilloso para relajar y disfutar de una experiencia diferente.</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda *</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: BAJA</li>
+        <li>Dificultad Física: BAJA</li>
+      </ul>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Ésta experiencia puede realizarse tanto de mañana como de tarde. Por la mañana se sale a
+        partir de las 9 am y se emprende el regreso las 15hs
+        Por la tarde se sale pasado el mediodía y se emprende el regreso a partir de las 17:30 hs.</p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+    <div class="excursiones__Hondo">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideHondo-1" name="slide7" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/RioHondo1.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideHondo-2" name="slide7" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/RioHondo2.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideHondo-3" name="slide7" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/RioHondo3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideHondo-4" name="slide7" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/RioHondo4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideHondo-5" name="slide7" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/RioHondo5.jpg">
+          </div>
+
+          <label for="slideHondo-1" class="slide-control next control-5">›</label>
+          <label for="slideHondo-4" class="slide-control prev control-5">‹</label>
+          <label for="slideHondo-5" class="slide-control next control-4">›</label>
+          <label for="slideHondo-3" class="slide-control prev control-4">‹</label>
+          <label for="slideHondo-4" class="slide-control next control-3">›</label>
+          <label for="slideHondo-2" class="slide-control prev control-3">‹</label>
+          <label for="slideHondo-1" class="slide-control prev control-2">‹</label>
+          <label for="slideHondo-3" class="slide-control next control-2">›</label>
+          <label for="slideHondo-5" class="slide-control prev control-1">‹</label>
+          <label for="slideHondo-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideHondo-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideHondo-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideHondo-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideHondo-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideHondo-5" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto__Hondo">
+      <h2 class="texto__titulo">Trekking Río Hondo</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Es una caminata de baja dificultad, por senderos agrestes que nos conducen por hermosos
+        paisajes y dónde podemos disfrutar de las aguas del Río Hondo.</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda * **</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: BAJA</li>
+        <li>Dificultad Física: BAJA</li>
+      </ul>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Ésta experiencia puede realizarse tanto de mañana como de tarde. Por la mañana se sale a
+        partir de las 9 am y se emprende el regreso las 15hs
+        Por la tarde se sale pasado el mediodía y se emprende el regreso a partir de las 17:30 hs.</p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+    <div class="excursiones__Cumbre">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideCumbre-1" name="slide8" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/CumbreGomez1.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCumbre-2" name="slide8" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/CumbreGomez2.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCumbre-3" name="slide8" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/CumbreGomez3.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCumbre-4" name="slide8" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/CumbreGomez4.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCumbre-5" name="slide8" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/CumbreGomez5.jpg">
+          </div>
+          <input class="slide-open" type="radio" id="slideCumbre-6" name="slide8" aria-hidden="true" hidden="">
+          <div class="slide-item">
+            <img src="../img/excursiones/CumbreGomez6.jpg">
+          </div>
+          <label for="slideCumbre-1" class="slide-control next control-6">›</label>
+          <label for="slideCumbre-5" class="slide-control prev control-6">‹</label>
+          <label for="slideCumbre-6" class="slide-control next control-5">›</label>
+          <label for="slideCumbre-4" class="slide-control prev control-5">‹</label>
+          <label for="slideCumbre-5" class="slide-control next control-4">›</label>
+          <label for="slideCumbre-3" class="slide-control prev control-4">‹</label>
+          <label for="slideCumbre-4" class="slide-control next control-3">›</label>
+          <label for="slideCumbre-2" class="slide-control prev control-3">‹</label>
+          <label for="slideCumbre-1" class="slide-control prev control-2">‹</label>
+          <label for="slideCumbre-3" class="slide-control next control-2">›</label>
+          <label for="slideCumbre-6" class="slide-control prev control-1">‹</label>
+          <label for="slideCumbre-2" class="slide-control next control-1">›</label>
+          <ol class="slide-indicador">
+            <li>
+              <label for="slideCumbre-1" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCumbre-2" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCumbre-3" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCumbre-4" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCumbre-5" class="slide-circulo">•</label>
+            </li>
+            <li>
+              <label for="slideCumbre-6" class="slide-circulo">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="texto__Cumbre">
+      <h2 class="texto__titulo">Trekking Cumbre Río Goméz</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Es una caminata a través del bosque nativo, donde sendas naturales y agrestes nos
+        conducen a la cumbre más alta de las sierras de San francisco</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda * **</li>
+        <li>Calzado resistente, cómodo, de suela gruesa *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (1,5 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br>
+      ** Recomendamos pantalón largo para el ascenso y una muda extra de medias y camiseta
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: MEDIA</li>
+        <li>Dificultad Física: MEDIA</li>
+      </ul>
+      Es un trekking de equilibrio. El lugar es agreste y los senderos por dónde se marcha presentan rocas sueltas.Se
+      recorre una distancia total de 12 km.
+      La actividad requiere buena condición física. Implica un esfuerzo físico importante. Los bastones son excelentes y
+      muy recomendables para ésta salida.
+      <br><br>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Es una experiencia que comienza bien temprano por la mañana (varía según la estación del
+        año) y termina por la tarde a las 18hs. En condiciones ideales son 4hs de ascenso aproximadamente (depende de
+        las condiciones fisicas grupales). El descenso suele ser un poco más lento.</p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+
+    <div class="excursiones__Carancho">
+      <div class="slide">
+        <div class="slide-inner">
+          <input class="slide-open" type="radio" id="slideCumbre-1" name="slide9" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="slide-item">
+            <img src="../img/excursiones/Carancho1.jpg">
           </div>
         </div>
-      </footer>
-      <script src="../js/bootstrap.bundle.min.js"></script>
+      </div>
+    </div>
+
+    <div class="texto__Carancho">
+      <h2 class="texto__titulo">Trekking Quebrada del Carancho</h2>
+      <p class="texto__detalle__excursiones">Que es?</p>
+      <p class="texto__detalle">Es una caminata que se desarrolla en uno de los parajes de San francisco. Ésta
+        experiencia nos ofrece la oportunidad de descubrir los sitios maravillosos que se esconden en la quebrada. La
+        salida implica caminar por sendas agrestes, ríos, realizar pequeñas trepadas y también poder disfrutar de la
+        belleza de la flora y fauna nativa de lugar.</p>
+      <p class="texto__detalle__excursiones">Que necesito llevar?</p>
+      <ul class="texto__detalle">
+        <li>Ropa cómoda * **</li>
+        <li>Calzado deportivo (de suela gruesa, cómodo y resistente) *</li>
+        <li>Mochila pequeña (10~20 litros) *</li>
+        <li>Gorra *</li>
+        <li>Gafas</li>
+        <li>Agua (2 litros como mínimo) *</li>
+        <li>Alimento: Algo para almorzar y merendar</li>
+        <li>Protector solar</li>
+      </ul>
+      * Obligatorio
+      <br>
+      ** Recomendamos pantalón largo para el ascenso y una muda extra de medias y camiseta
+      <br><br>
+      <p class="texto__detalle__excursiones">Cuál es dificultad técnica y fisica de la experiencia?</p>
+      <ul class="texto__detalle">
+        <li>Dificultad Técnica: MEDIA</li>
+        <li>Dificultad Física: MEDIA</li>
+      </ul>
+      <p class="texto__detalle__excursiones">Duración?</p>
+      <p class="texto__detalle">Es una experiencia que comienza bien temprano por la mañana, son 3hs de marcha
+        aproximadamente (depende de las condiciones fisicas grupales) y se emprende el regreso a partir de las 15 :hs
+        para finalizar a las 18:00hs.</p>
+      *Los horarios de salida y regreso dependen de la época del año y las condiciones climáticas
+    </div>
+  </div>
+  <!-- Fin Excursiones -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="pie">
+      <div class="pie__redes">
+        <p>Siguenos en Redes</p>
+        <a title="Facebook" href="https://www.facebook.com/brujoexcursiones" target="_blank"><img class="icono"
+            src="../img/facebook.svg" alt="Icono Facebook"></a>
+        <a title="Instagram" href="https://www.instagram.com/brujo.excursiones/?hl=es" target="_blank"><img
+            class="icono" src="../img/instagram.svg" alt="Icono Instagram"></a>
+        <a title="WhatsApp" href="https://wa.me/+5492664892738" target="_blank"><img class="icono"
+            src="../img/whatsapp.svg" alt="Icono WhatsApp"></a>
+      </div>
+      <div class="pie__derechos">
+        <p>Brujo Excursiones - Todos los derechos reservados - 2022</p>
+      </div>
+      <div class="pie__domicilio">
+        <p>Calle XXXX Altura 123</p>
+        <p>Te: 1234-567890</p>
+        <p>mail@mail.com</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

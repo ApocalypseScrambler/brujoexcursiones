@@ -1,10 +1,9 @@
 // Variables
 
 // Colores  
-$colores: (  
-    blanco: #fafafa,
-    oscuro: rgb(17, 17, 17)
-);
+$blanco: #fafafa;
+$negro: #000000;
+$azul: #0000FF;
 
 // Fuentes
 $fuente-titulo: 'Indie Flower', cursive;
@@ -24,7 +23,7 @@ $desktop-xl: 1200px;
 .boton {
     border: $borde-negro;
     border-radius: $borde-redondo;
-    box-shadow: -3px 3px map-get($colores, oscuro);
+    box-shadow: -3px 3px $negro;
     text-align: center;
     text-transform: uppercase;
     color: #000;

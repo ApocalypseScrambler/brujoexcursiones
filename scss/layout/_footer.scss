@@ -16,7 +16,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: map-get($colores, blanco);
+    color: $blanco;
     font-size: 1.3rem;
     margin: 0 1rem;
 }
